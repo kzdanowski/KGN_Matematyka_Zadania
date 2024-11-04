@@ -1,0 +1,352 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx} % Required for inserting images
+%\usepackage{fitch}
+%\usepackage[english]{babel}
+%\usepackage[polish, english]{babel}
+\usepackage{polski}
+%\usepackage[latin2]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{datatool}
+%\usepackage{tikz}
+%\usetikzlibrary{decorations.markings}
+%\usepackage{tikz-er2}
+%\usepackage{fitch}
+
+
+\usepackage{tikz}
+\usepackage{pgflibraryshapes}
+\usetikzlibrary{shapes}
+\usetikzlibrary{arrows}
+\usetikzlibrary{trees}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{positioning}
+%\usetikzlibrary{placments}
+\usetikzlibrary{fit}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+
+
+%%%% GLOBAL PARAMETERS %%%
+
+\newcommand{\Rec}{\text{Rec}}
+\newcommand{\Poly}{\text{Poly}}
+\newcommand{\TIME}{\text{TIME}}
+\newcommand{\poly}{\mathrm{poly}}
+\newcommand{\set}[1]{{\{#1\}}}
+\newcommand{\bin}{\text{bin}}
+\newcommand{\st}{\text{st}}
+\newcommand{\sqn}{\text{sq}}
+\newcommand{\oneseq}[2]{{{#1}_{1},\dots, {#1}_{#2}}}
+
+
+\let\gcd\undefined
+\DeclareMathOperator{\gcd}{gcd}
+\DeclareMathOperator{\lcm}{lcm}
+
+\newcommand{\bit}{{\text{bit}}}
+\newcommand{\isfunc}[3]{{{#1}\colon{#2}\rightarrow{#3}}}
+
+
+
+\newcommand{\trans}[2]{{{F}^{#1}_{#2}}}
+\newcommand{\floor}[1]{{\lfloor #1\rfloor}}
+
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cP}{\mathcal{P}}
+
+
+\newcommand{\PA}{\text{PA}}
+
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bR}{\mathbb{R}}
+
+\DeclareMathOperator{\id}{id}
+\newcommand{\Out}{{\mathit{Out}}}
+\newcommand{\Move}{{\mathit{Move}}}
+\newcommand{\update}{{\mathit{update}}}
+\newcommand{\init}{{\mathit{init}}}
+\newcommand{\choice}{\mathit{choice}}
+\newcommand{\lex}{{\mathit{lex}}}
+\newcommand{\lelex}{{<_{\lex}}}
+\newcommand{\leqlex}{{\leq_{\lex}}}
+\newcommand{\lesuf}{{<_{\mathrm{suf}}}}
+\newcommand{\leqsuf}{{\leq_{\mathrm{suf}}}}
+\newcommand{\Seq}{{\mathrm{Seq}}}
+\newcommand{\Reach}{{\mathrm{Reach}}}
+\newcommand{\New}{{\mathrm{New}}}
+\newcommand{\Recurring}{{\mathrm{Recurring}}}
+\newcommand{\Reconstruct}{{\mathrm{Reconstruct}}}
+
+\newcommand{\child}{{\mathrm{child}}}
+\newcommand{\children}{{\mathrm{children}}}
+
+\newcommand{\uarrow}[1]{{\stackrel{#1}{\rightarrow}}}
+
+\newcommand{\Buchi}{{B\"{u}chi\ }}
+
+\newcommand{\move}[3]{{{#1}\uarrow{#2}{\set{#3}}}}
+\newcommand{\moveset}[3]{{{#1}\uarrow{#2}{#3}}}
+\newcommand{\movestop}[1]{{{#1}\uarrow{}{\bot}}}
+
+\newcommand\sltit[1]{\begin{center}{ \bf #1}\end{center}}
+
+\newcommand{\zf}[2]{{{#1}\rightarrow{#2}}}
+\newcommand{\zw}[2]{{{#1}\twoheadrightarrow{#2}}}
+
+%\newcommand{\set}[1]{{\{#1\}}}
+\newcommand{\imp}{\Rightarrow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\bluemath}[1]{{\setbeamercolor{math text}{fg=blue}{#1}}}
+\newcommand{\greenmath}[1]{{\setbeamercolor{math text}{fg=green}{#1}}}
+\newcommand{\redmath}[1]{{\setbeamercolor{math text}{fg=red}{#1}}}
+\newcommand{\defintro}[1]{ {\color{red}{#1}}}
+\newcommand{\tred}[1]{{\color{red}{#1}}}
+\newcommand{\tblue}[1]{{\color{blue}{#1}}}
+\newcommand{\tgreen}[1]{{\color{green}{#1}}}
+\newcommand{\tyellow}[1]{{\color{yellow}{#1}}}
+\newcommand{\intro}[1]{\emph{#1}}
+
+
+\newcommand{\przyklad}{{\bf Przykład.\ }}
+
+
+\newtheorem{thm}{Twierdzenie}
+\newtheorem{crl}[thm]{Wniosek}
+\newtheorem{lem}[thm]{Lemat}
+\newtheorem{fact}[thm]{Fakt}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{dfn}[thm]{Definicja}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{exmpl}[thm]{Example}
+\newtheorem{exmpls}[thm]{Examples}
+\newtheorem{post}[thm]{Postulate}
+
+\newcommand{\ifff}{\Leftrightarrow}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+
+\DeclareMathOperator{\card}{card}
+
+
+\newcommand{\ft}[1]{\frametitle{#1}}
+\newcommand{\lstl}[1]{\begin{lstlisting} #1\end{listing}}
+
+
+%\lstdefinestyle{Oracle}{basicstyle=\ttfamily,
+ %                       keywordstyle=\lstuppercase,
+   %                     emphstyle=\itshape,
+      %                  showstringspaces=false,
+          %              }
+
+%\lstdefinelanguage[Oracle]{SQL}[]{SQL}{
+ %morekeywords={WITH, OVER, PARTITION, ACCESS, MOD, NLS_DATE_FORMAT, NVL, REPLACE, SYSDATE,
+     %                    TRUNC, REFERENCES, DEFERRED,
+         %           AFTER, REFERENCING, NEW, ROW, FOR, EACH, OLD, BEFORE, STATEMENT, OF, IF, return, is, cursor,
+             %       BEGIN, END, LOOP, DECLARE, open, close, type, rowtype, fetch, exit, package, body, out, ref},
+%}
+%\lstdefi
+%\lstset{language=[Oracle]SQL,  style=Oracle,  }
+
+
+\title{Zadania \\ Matematyka I, Kognitywistyka,}
+\author{Konrad Zdanowski}
+%\date{13 luty 2016}
+%\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+%begin{center}
+%{\bf \large ELT -- przykładowy egzamin 2017}\\
+%\medskip
+%Konrad Zdanowski
+%\end{center}
+%\vspace{5pt}
+
+\section{Teoria liczb}
+\subsection{Faktoryzacja, $\gcd$, $\lcm$}
+\begin{enumerate}
+    \item Czy 113, 201, 213 to liczby pierwsze? 
+        (\cite[4.6.3, zad. 2]{Forman.2015})
+     \item Znajdź faktoryzację: 3465, 40 320, 14641.  (\cite{Forman.2015})	
+\item  Czy 1 111 111 111 jest pierwsza? (\cite{Forman.2015})
+\item Niech $m = 2^2*3^3 * 5 * 7* 11$,  $n = 2*3*11$.
+   Wyznacz $\gcd$, $\lcm$. (\cite{Forman.2015})
+\item Niech $m = 5^2*7*11*13^2$, $n = 2*3*7^3*11^2*13$,
+            $k=3*5*7^2*11^3$.
+   Wyznacz $\gcd(m,n,k)$, $\lcm(m,n,k)$. 
+\item 
+ Czy jest nieskończenie wiele liczb pierwszych postaci $n^2 - 49$,
+ dla pewnego $n\in\NN$? (\cite{Forman.2015})
+\item 
+Jeśli $p$ jest pierwsza, to czy $2^p - 1$ jest pierwsza? (\cite{Forman.2015})
+\item  (\cite{Forman.2015})
+ Wyznacz
+    $\gcd(756, 2205),
+    \gcd(4725, 17460), 
+    \gcd(465, 3861),
+    \gcd(4600, 2116), \\
+    \gcd(630, 990), 
+    \gcd(96, 144)$.
+
+Wyznacz
+$\lcm(756, 2205),
+\lcm(4725, 17460),
+\lcm(465, 3861),
+\lcm(4600, 2116),\\
+\lcm(630, 990),
+\lcm(96, 144)$.
+
+
+\item Wyznacz wszystkie liczby, których nie dzieli
+żadna liczba pierwsza większa od pięciu i które mają 
+dokładnie pięć dzielników.
+
+\item Wyznacz wszystkie liczby, które dzielą $5*7$. 
+      Ile jest takich liczb?
+
+
+\end{enumerate}
+
+
+
+\subsection{Przystawanie modulo}
+\begin{enumerate}
+    \item Rozstrzygnij, czy jest prawdą
+    \begin{itemize}
+        \item
+    $0 \equiv 6 \pmod 3$,
+    \item
+ $35 \equiv 55 \pmod 9$,
+\item  $(-23) \equiv 20 \pmod 7$
+ \item $(-3) \equiv 3 \pmod 6$,
+ \item $(-2) \equiv 2 \pmod 3$,
+ \item $16 \equiv 185 \pmod 11.$
+ \end{itemize}
+    (\cite[sec. 6.1, p. 154]{Forman.2015})
+
+
+
+\item
+Wyznacz wszystkie liczby $n\in \bbZ$ takie, że
+$n\equiv 2 \pmod 5$.
+\item 
+Czy $(-1)\equiv 1 \pmod 2$?
+
+\item Wyznacz resztę z dzielenia liczby $17*23*45$ przez $8$.
+ Wyznacz resztę z dzielenia liczby $17*23*45$ przez $5$.
+
+Nie używaj kalkulatora.
+
+\item Znajdź $n\in \NN$ takie, że $n\equiv 3 \pmod 5$ i 
+$n\equiv 2 \pmod 3$.
+
+\item Znajdź $n\in \NN$ takie, że $n\equiv 4 \pmod 4$ i 
+$n\equiv 2 \pmod 5$.
+
+\item Nie znajdź $n\in \NN$ takiego, że
+$n\equiv 3 \pmod 6$ is $n\equiv 0 \pmod 2$.
+
+Dlaczego takie $n$ nie istnieje?
+
+\item Nie znajdź $n\in \NN$ takiego, że
+$n\equiv 3 \pmod 6$ is $n\equiv 2 \pmod 9$.
+
+Dlaczego takie $n$ nie istnieje?
+
+\item Wyznacz wszystkie liczby, które dzielą $5*7$. 
+ 
+
+\item Korzystając z Twierdzenia Eulera ($a^{\varphi(n)} \equiv 1 \pmod n$, gdy $\gcd(a,n)=1$) i Małego Twierdzenia Fermata 
+($x^{p-1}\equiv 1 \pmod p$, dla liczby pierwszej $p$)
+i z tego, że relacja przystawania modulo jest kongruencją
+względem dodawania i mnożenia,
+oblicz
+\begin{itemize}
+    \item $3^{100} \bmod 5$,
+    \item $5^{100} \bmod 7$,
+    \item $3^{100}\bmod 10$,
+    \item $3^{100}\bmod 6$ (uwaga),
+    \item $4^{100}\bmod 9$,
+    \item $2^{2^{100}} \bmod 5$,
+    \item $5^{5^{100}} \bmod 3$.
+\end{itemize}
+
+\end{enumerate}
+
+\subsection{Indukcja}\label{ss:indukcja}
+\begin{enumerate}
+    \item Udowodnij $\Sigma_{i=1}^n i = \frac{n(n+1)}{2}$. 
+    \item Udowodnij $\Sigma_{i=0}^n (2i+1) = (n+1)^2$
+           (sumę $n$ pierwszych liczb nieparzystych).
+    \item Udowodnij, dla każdego $n\geq 1$, dla wszystkich $x_1,\dots, x_n\in \bR$, $|x_1 + ... + x_n| \leq  |x_1| + ... + |x_n|$.
+\item 
+Dla dowolnego  $n\geq 1$, $\forall x \in (0,1)\, x^n \leq  x$.
+
+Skorzystaj z faktu, że dla dowolnych $a,b$, jeśli $0\leq a < 1$ i $b\geq 0$, to $ab<b$.
+
+\item 
+Udowodnij, że dla dowolnego $n$, $\Sigma_{i=0}^n \frac{1}{2^i} \leq 2$.
+
+Rozważ wzmocnienie  tezy, 
+do $\Sigma_{i=0}^n \frac{1}{2^i} \leq 2-\frac{1}{2^{n}}$.
+
+\item \label{ind:2nn2} Udowodnij, że dla dowolnego $n\geq 4$, $2^n\geq  n^2$.
+
+Której części dowodu indukcyjnego nie można przeprowadzić 
+dla tezy $\forall n\geq 0\, (2^n\geq n^2)$.
+
+Której części dowodu indukcyjnego nie można przeprowadzić 
+dla tezy $\forall n\geq 3\, (2^n\geq n^2)$.
+
+\item Ciąg Fibbonacciego definiujmy jako 
+$F(1)=F(2)=1$, oraz $F(n+2)=F(n)+F(n+1)$ dla $n\geq 1$.
+
+
+Udowodnij, że dla $n\geq 1$, 
+$$
+F(n)=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n- 
+    \frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n.
+$$
+
+\item 
+(Nierówność  Bernoulliego,  uproszczony przypadek) Dla dowolnego $n\geq 1$, 
+\[
+\forall x \geq 0\, ((1+x)^n \geq (1+nx)).
+\]
+
+\end{enumerate}
+
+\section{Uwagi lub (p)odpowiedzi}
+
+
+\begin{itemize}
+    \item Część~\ref{ss:indukcja}, zadanie~\ref{ind:2nn2}. 
+     
+     W tezie $\forall n\geq 0 (2^n\geq n^2)$ nie uda się 
+     udowodnić kroku indukcyjnego.
+     
+     W tezie $\forall n\geq 3 (2^n\geq n^2)$ krok indukcyjny da się udowodnić, ale nie da się udowodnić przypadek bazowy.
+\end{itemize}
+
+\bibliographystyle{alpha}
+\bibliography{Mat_KGN}
+
+\end{document}	
