@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{amssymb}
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{graphicx} % Required for inserting images
 %\usepackage{fitch}
 %\usepackage[english]{babel}
@@ -333,6 +334,56 @@ $$
 \]
 
 \end{enumerate}
+
+\section{Matematyka dyskretna}
+\subsection{Zliczania}
+
+Notacje. $|X|$ to moc zbioru $X$.
+$\cP(X)$ to zbiór podzbiorów $X$.
+$\cP^{=k}(X)$ to ilość $k$ elementowych podzbiorów 
+zbioru $X$, gdzie $k\in\bN$.
+
+\begin{thm}
+	Niech $X,Y, Z$ zbiory skończone. Wtedy 
+	%\begin{enumerate} 
+		%\item 
+		$|X\cup Y|=|X|+|Y|-|X\cap Y|$ oraz
+		%\item 
+		 \begin{multline*}
+		 	X\cup Y\cup Z|= |X|+|Y|+|Z|+ \\
+		 	- |X\cap Y| - |X\cap Z| - |Y\cap Z| + |X\cap Y\cap Z|.
+		 \end{multline*} 
+		%\end{enumerate} 
+\end{thm}
+
+\begin{thm}
+	Niech $X$ będzie zbiorem skończonym o mocy (liczności) $n$. 
+	Wtedy $|\cP(X)|=2^n$.
+\end{thm}
+
+\begin{dfn}
+	Dwumian Newtona to wyrażenie $\binom{n}{k}$, gdzie $0\leq k\leq n$, zdefiniowane jako
+	\[
+	\binom{n}{k}=\frac{n!}{k!(n-k)!}.
+	\]
+\end{dfn}
+Ponieważ $0!=1$, to $\binom{0}{0}=1$.
+
+\begin{thm}
+	Dla $0\leq k \leq n$, ilość $k$-elementowych podzbiorów
+	$n$ elementowego to~$\binom{n}{k}$. 
+	
+	Innymi słowy, jeśli $|X|=n$, 
+	to $|\cP\sp{=k}(X)|=\binom{n}{k}$.
+\end{thm}
+
+Dwumian Newtona spełnia rekurencyjną zależność,
+dla $k+1\leq n$, 
+\[
+\binom{n+1}{k+1} = \binom{n}{k+1} + \binom{n}{k}.  
+\]
+
+\subsection{Teoria grafów}
 
 \section{Uwagi lub (p)odpowiedzi}
 
