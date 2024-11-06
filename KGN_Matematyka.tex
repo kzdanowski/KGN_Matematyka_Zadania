@@ -132,7 +132,7 @@
 \newtheorem{crl}[thm]{Wniosek}
 \newtheorem{lem}[thm]{Lemat}
 \newtheorem{fact}[thm]{Fakt}
-\newtheorem{prop}[thm]{Proposition}
+\newtheorem{prop}[thm]{Stwierdzenie}
 \newtheorem{dfn}[thm]{Definicja}
 \newtheorem{rem}[thm]{Remark}
 \newtheorem{exmpl}[thm]{Example}
@@ -148,6 +148,10 @@
 
 \newcommand{\ft}[1]{\frametitle{#1}}
 \newcommand{\lstl}[1]{\begin{lstlisting} #1\end{listing}}
+
+\newcommand{\ala}{\textrm{ala}}
+\newcommand{\ela}{\textrm{ela}}
+\newcommand{\ola}{\textrm{ola}}
 
 
 %\lstdefinestyle{Oracle}{basicstyle=\ttfamily,
@@ -166,7 +170,8 @@
 %\lstset{language=[Oracle]SQL,  style=Oracle,  }
 
 
-\title{Zadania \\ Matematyka I, Kognitywistyka,}
+\title{Matematyka I, Kognitywistyka,\\
+        Zadania}
 \author{Konrad Zdanowski}
 %\date{13 luty 2016}
 %\date{}
@@ -180,6 +185,9 @@
 %Konrad Zdanowski
 %\end{center}
 %\vspace{5pt}
+
+Tekst ten zawiera listę najbardziej istotnych definicji
+i twierdzeń z wykładu oraz przykładowe zadania.
 
 \section{Teoria liczb}
 \subsection{Faktoryzacja, $\gcd$, $\lcm$}
@@ -343,6 +351,10 @@ $\cP(X)$ to zbiór podzbiorów $X$.
 $\cP^{=k}(X)$ to ilość $k$ elementowych podzbiorów 
 zbioru $X$, gdzie $k\in\bN$.
 
+\subsubsection{Zliczania zbiorów}
+
+
+
 \begin{thm}
 	Niech $X,Y, Z$ zbiory skończone. Wtedy 
 	%\begin{enumerate} 
@@ -382,6 +394,136 @@ dla $k+1\leq n$,
 \[
 \binom{n+1}{k+1} = \binom{n}{k+1} + \binom{n}{k}.  
 \]
+
+\subsubsection{Zliczania wyborów}
+
+
+\begin{dfn}
+	Niech $X$ będzie $n$ elementowym zbiorem.
+	Wtedy $r$-kombinacja  zbioru $X$ to $r$ elementowy podzbiór $X$.
+\end{dfn} 
+
+Np. Jeśli $X$ jest zbiorem trzech osób,
+$X=\{\ala, \ola, \ela \}$, to $2$-kombinacja
+to dowolny dwuelementowy podzbiór $X$, 
+np. $\{\ala, \ola \}$, $\{\ala, \ela\}$.
+
+\begin{thm}
+	Niech $X$ będzie $n$-elementowym zbiorem, niech $0\leq r\leq n$. Ilość $r$-kombinacji $X$ to $\binom{n}{r}$.
+\end{thm}
+
+
+
+Przykładowe $2$-kombinacje zbioru $\{\ala, \ela, \ola\}$,
+to $\{\ala, \ela\}$, $\{\ala, \ola\}$.
+(Uwaga, w zbiorach nie ma znaczenia kolejność wypisywania
+elementów.)
+
+
+\begin{dfn}
+Niech $X$ będzie $n$ elementowym zbiorem .
+Permutacja zbioru $X$ to sposób uporządkowania 
+elementów $X$.
+\end{dfn} 
+
+Np. jeśli $X$ jest zbiorem $3$ osób, to możemy
+na sześć sposobów ustawić te osoby w kolejce.
+
+
+
+\begin{thm}
+	Ilość permutacji zbioru $n$ elementowego,
+	to $n!$.
+\end{thm}
+
+
+\begin{dfn}
+	Niech $X$ będzie zbiorem $n$ elementowym i niech $r\leq n$.
+	Wtedy, $r$-wariacja bez powtórzeń zbioru $X$ to sposób na wybranie i uporządkowanie $r$ różnych elementów z $X$.
+\end{dfn} 
+
+Przykładowe $2$-wariacje zbioru $\{\ala, \ela, \ola\}$,
+to $(\ala, \ola)$, $(\ola, \ala)$, $(\ela, \ala)$.
+
+\begin{thm}
+	Ilość $r$-wariacji bez powtórzeń $n$ elementowego zbioru 
+	to $\frac{n!}{(n-r)!}$.
+\end{thm}
+
+\begin{dfn}
+	Niech $X$ będzie zbiorem $n$ elementowym i niech $r\leq n$.
+	Wtedy, $r$-wariacja z powtórzeniami zbioru $X$ to sposób na wybranie i uporządkowanie $r$ elementóW z $X$, gdy elementy mogą się powtarzać.
+\end{dfn} 
+
+Przykładowe $2$-wariacje z powtórzeniami 
+zbioru $\{\ala, \ela, \ola\}$,
+to $(\ala, \ala)$, $(\ola, \ala)$, 
+$(\ala, \ola)$, $(\ola, \ola)$.
+
+
+\begin{thm}
+	Ilość $r$-wariacji z powtórzeniami $n$ elementowego zbioru 
+	to $n^r$.
+\end{thm}
+
+Jeśli losujemy kule tak jak w totolotku, to jest to kombinacja 
+(kolejność wylosowania nie ma znaczenia).
+Jeśli losujemy $r$ ponumerowanych kul 
+i układamy je w rządek (bez zwracania do worka), to mamy
+wariację bez powtórzeń. Jeśli zapisujemy wyniki kolejnych losowań a same kule wrzucamy z powrotem do worka, to mamy
+wariację z powtórzeniami.
+\bigskip
+
+
+Dodatkowo, jeśli umieszczamy $n$ takich samych przedmiotów
+w $r$ różnych pudełkach, to możemy zrobić to
+na~$\binom{n+r-1}{r-1}$ sposobów.
+
+Na przykład, jeśli mamy $1$, $2$, $5$ i $10$ groszówki, 
+to możemy wybrać z nich $10$ moment 
+na~$\binom{10+4-1}{4-1}=\binom{13}{3}$
+sposobów.
+
+\subsubsection{Zadania}
+\begin{enumerate}
+	\item 
+	Zad. (\cite{MD}, Cw. 5.3.1, p.302)
+	Wśród 200 osób 150 uprawia pływanie lub jogging lub oba sporty.
+	85 pływa, 60 pływanie i jogging. 
+	Ile osób pływa?
+	
+	\item 
+	Zad. 
+	Ile liczb z $\{10, ..., 99\}$ ma dokładnie jedną liczbę równą $7$?
+	Ile ma przynajmniej jedną siódemkę?
+	Ile ma przynajmniej jedną $7$ lub $3$?
+	Ile ma przynajmniej jedną $7$ i przynajmniej jedną $3$?
+	
+	\item 
+	Ile liczb ze zbioru $\{1,...,100\}$ jest podzielnych przez $3$ i przez $5$?
+	Ile przez $6$ i przez $9$?
+	
+	\item 
+	 Na ile sposobów można usadzić $n$ osób na ławce?
+	 \item 
+	Na ile sposobów można usadzić $n$ osób przy okrągłym stole?
+	\item  Na ile sposobów można rozdać $52$ karty po równo między $4$ graczy?
+	\item Ile przekątnych ma $n$-kąt wypukły?
+    \item Ile jest różnych sposobów ustawienia na półce dzieła $5$-tomowego tak, aby:
+    \begin{itemize} 
+	\item[a] tomy I i II stały obok siebie
+	\item[b] tomy I i II nie stały obok siebie?
+	\end{itemize} 
+	\item Ile czteroosobowych komisji można stworzyć z grupy $9$ urzędników, jeżeli
+	wiadomo, że wśród nich są osoby $A$ oraz $B$, które nie chcą razem pracować?
+	\item Ile jest liczb całkowitych pomiędzy $1000$ a $9999$, których suma cyfr wynosi
+	dokładnie $9$?
+	\item  Na ile sposobów można podzielić $3n$ osób na $n$ grup $3$-osobowych?
+	\item W klasie jest $n$ chłopców i $n$ dziewczynek. Na ile sposobów mogą utworzyć pary do tańca. 
+	\item Jaka jest szansa trafienia szóstki w totolotku (losujemy sześć liczb z 49)? Ile powinna wynosić kumulacja, 
+	 żeby przy cenie zakładu 3zł. opłacało się zagrać?
+\end{enumerate}
+
 
 \subsection{Teoria grafów}
 
