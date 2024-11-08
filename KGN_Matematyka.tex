@@ -236,7 +236,7 @@ dokładnie pięć dzielników.
 
 
 
-\subsection{Przystawanie modulo}
+\subsection{Przystawanie modulo}\label{subsec:modulo}
 \begin{enumerate}
     \item Rozstrzygnij, czy jest prawdą
     \begin{itemize}
@@ -283,7 +283,9 @@ Dlaczego takie $n$ nie istnieje?
 \item Wyznacz wszystkie liczby, które dzielą $5*7$. 
  
 
-\item Korzystając z Twierdzenia Eulera ($a^{\varphi(n)} \equiv 1 \pmod n$, gdy $\gcd(a,n)=1$) i Małego Twierdzenia Fermata 
+\item \label{exc:modpowers}
+
+ Korzystając z Twierdzenia Eulera ($a^{\varphi(n)} \equiv 1 \pmod n$, gdy $\gcd(a,n)=1$) i Małego Twierdzenia Fermata 
 ($x^{p-1}\equiv 1 \pmod p$, dla liczby pierwszej $p$)
 i z tego, że relacja przystawania modulo jest kongruencją
 względem dodawania i mnożenia,
@@ -549,6 +551,27 @@ sposobów.
 
 
 \begin{itemize}
+	\item Część~\ref{subsec:modulo}, zadanie~\ref{exc:modpowers}.
+	Aby policzyć np. $3^{5^100} \bmod 7$ trzeba wykorzystać 
+	twierdzenie Eulera, moulo równego $7$ i równego $6$.
+	Zauważmy, że $\varphi(7)=6$, $\varphi(6)=2$.
+	Po pierwsze, jeśli przedstawimy $5^{100} = 6k+i$, gdzie $0\leq i<6$, to 
+	\[
+	3^{6k+i} \equiv (3^6)^k3^i \equiv 1^k3^i \equiv 3^i \pmod 7.
+	\]
+	Teraz, aby sprawdzić, jaka jest reszta z dzielenia $5^100$ przez $6$, czyli aby znaleźć $i$ takie, że 
+	\[
+	5^{100}\equiv i \pmod 6.
+	\]
+	Ponieważ $5$ jest względnie pierwsze z $6$, z twierdzenia Eulera mamy $5^2 \equiv 1 \pmod 6$.
+	Wtedy 
+	\[
+	5^100 \equiv (5^2)^{50} \equiv 1^{50} \equiv 1 \pmod 6.
+	\]
+	Skoro szukana wartość $i$ wynosi $1$, to 
+	\[
+	3^{5^100} \equiv 3^1 \equiv 3 \pmod 7.
+	\]
     \item Część~\ref{ss:indukcja}, zadanie~\ref{ind:2nn2}. 
      
      W tezie $\forall n\geq 0 (2^n\geq n^2)$ nie uda się 
