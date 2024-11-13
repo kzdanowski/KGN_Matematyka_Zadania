@@ -144,6 +144,8 @@
 \newcommand{\RR}{\mathbb{R}}
 
 \DeclareMathOperator{\card}{card}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\rng}{rng}
 
 
 \newcommand{\ft}[1]{\frametitle{#1}}
@@ -345,6 +347,228 @@ $$
 
 \end{enumerate}
 
+\section{Teoria relacji i funkcji}
+
+\begin{dfn}
+	Niech $X$, $Y$ będą dowolnymi zbiorami. Iloczyn kartezjański $X\times Y$ 
+	to zbiór par uporządkowanych postaci $(a,b)$ gdzie $a\in X$ i $b\in Y$.
+	
+	Relacja między zbiorami $X$ i $Y$ to dowolny podzbiór $R$
+	iloczynu kartezjańskiego $X\times Y$.
+	
+	Jeśli $R\subseteq X\times X$ to mówimy, że $R$ jest relacją na $X$.
+\end{dfn}
+
+
+Możemy wyróżnić relację pełną, równą $X\times Y$, relację pustą $\emptyset$.
+Wyróżniamy też relację identycznościową na $X$, 
+$$
+\id_X= \{(a,a)\colon a\in X\}.
+$$ 
+
+\begin{dfn}
+	Dziedzina relacji $\dom(R)$.
+	
+	Przeciwdziedzina (obraz) relacji $\rng(R)$.
+\end{dfn}
+
+\subsection{Jak możemy przedstawić relację?}
+
+\begin{enumerate}
+	\item Zbiór par,
+	\item rysunek,
+	\item macierz.
+\end{enumerate}
+
+Następujące własności relacji bedą dla nas istotne.
+
+\begin{dfn}
+Niech $R$ będzie relacją na $X$. $R$ jest 
+\begin{itemize}
+	\item zwrotna,
+	\item przeciwzwrotna,
+	\item symetryczna,
+	\item przeciwsymetryczna,
+	\item antysymetryczna,
+	\item przechodnia.
+\end{itemize}	
+\end{dfn}
+
+\begin{dfn}[Rodzaje relacji]
+	\begin{itemize}
+		\item Relacja równoważności,
+		\item Relacja (częściowego) porządku
+		\item Relacja liniowego porządku
+	\end{itemize}
+\end{dfn}
+
+
+\begin{dfn}[Klasa abstrakcji]
+\end{dfn}
+
+\subsection{Operacje na relacjach}
+
+\begin{dfn}
+	\begin{itemize}
+		\item relacja odwrotna $R^{-1}$,
+		\item złożenie relacji $R\circ S$,
+		\item tranzytywne domknięcie $R^*$.
+	\end{itemize}
+\end{dfn}
+
+	
+\subsection{Funkcje}
+
+
+\subsection{Zadania (ChatGPT)}
+
+\begin{enumerate} 
+
+\item 
+Relacja na zbiorze liczb całkowitych.
+
+Rozważ zbiór liczb całkowitych $\mathbb{Z}$. Zdefiniuj relację $R$ na $\mathbb{Z}$ jako: 
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
+\]
+Udowodnij, że relacja $R$ jest zwrotna, symetryczna i przechodnia.
+
+\item 
+ Relacja "większe niż"
+
+Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x > y.
+\]
+Sprawdź, czy relacja $ R $ jest antysymetryczna i przechodnia.
+Udowodnij, że ta relacja nie jest zwrotna.
+
+\item
+ Relacja na zbiorze osób.
+
+Rozważ zbiór osób $ P = \{A, B, C\} $. Zdefiniuj relację $ R $ na $ P $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy osoba } x \text{ jest starsza od osoby } y.
+\]
+Sprawdź, czy relacja $ R $ jest antysymetryczna i przechodnia.
+Czy relacja jest zwrotna? Uzasadnij odpowiedź.
+
+\item
+ Relacja podzielności.
+
+Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x \text{ jest podzielne przez } y.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
+
+\item 
+ Relacja ,,przyjaciele''.
+
+Rozważ zbiór osób $ P $ i zdefiniuj relację $ R $ na $ P $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy osoby } x \text{ i } y \text{ są przyjaciółmi}.
+\]
+ Czy relacja $ R $ jest symetryczna? Uzasadnij odpowiedź.
+Czy relacja $ R $ jest zwrotna? Uzasadnij odpowiedź.
+
+\item 
+Relacja ,,parzystość'',
+
+Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy suma liczb } x \text{ i } y \text{ jest liczbą parzystą.}
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
+
+\item 
+ Relacja równości.
+
+Rozważ zbiór $ S = \{1, 2, 3\} $. Zdefiniuj relację $ R $ na $ S $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+
+\item 
+Relacja ,,dzielenie się przestrzenią''.
+
+Rozważ zbiór punktów na płaszczyźnie $ \mathbb{R}^2 $. Zdefiniuj relację $ R $ na $ \mathbb{R}^2 $ jako:
+\[
+(x_1, y_1) \, R \, (x_2, y_2) \text{ wtedy i tylko wtedy, gdy } x_1 = x_2 \text{ i } y_1 = y_2.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+
+\item 
+Relacja ,,bycie większym lub równym''.
+
+Rozważ zbiór liczb całkowitych $ \mathbb{Z} $. Zdefiniuj relację $ R $ na $ \mathbb{Z} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x \geq y.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+
+\item 
+ Relacja na zbiorze liter.
+
+Rozważ zbiór liter $ A, B, C, D $. Zdefiniuj relację $ R $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy litera } x \text{ sasiąduje z } y \text{ w alfabecie.}
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, antysymetryczna i przechodnia.
+
+\item 
+Własności relacji na zbiorze liczb  
+
+Niech $ R $ będzie relacją na zbiorze $ A = \{1, 2, 3, 4\} $ zdefiniowaną jako $ a R b $, jeśli $ a \leq b $.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+
+\item 
+Relacja podzielności  
+
+Niech $ R $ będzie relacją na zbiorze liczb całkowitych $ A = \{2, 3, 6, 9, 12\} $, gdzie $ a R b $ zachodzi, gdy $ a $ dzieli $ b $ bez reszty.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+
+\item 
+Relacja równości modulo  
+
+Rozważ zbiór $ A = \{0, 1, 2, 3, 4, 5\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $, gdy $ a \equiv b \pmod{2} $.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+Jeśli tak, to jak wyglądają jej klasy abstrakcji.
+\item 
+Relacja na zbiorze punktów  
+
+Na płaszczyźnie rozważmy zbiór punktów $ A = \{(0,0), (1,1), (2,2), (1,0), (2,1)\} $. Zdefiniuj relację $ R $ jako $ (x_1, y_1) R (x_2, y_2) $, jeśli $ x_1 = x_2 $.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+
+\item 
+Relacja porządku  
+
+Niech $ R $ będzie relacją na zbiorze $ A = \{a, b, c\} $ zdefiniowaną jako $ a R b $, jeśli $ a $ jest "mniejsze lub równe" od $ b $ według pewnej kolejności alfabetycznej.  
+Sprawdź, czy relacja $ R $ jest relacją porządku częściowego.  
+Zapisz diagram Hassego dla tej relacji.
+
+\item 
+ Właściwości relacji na zbiorze liczb  
+
+Rozważ zbiór $ A = \{1, 2, 3, 4, 5\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $ wtedy i tylko wtedy, gdy $ a + b $ jest liczbą parzystą.  
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.  
+
+\item 
+Klasy abstrakcji  
+
+Na zbiorze $ A = \{1, 2, 3, 4, 5, 6\} $ zdefiniowana jest relacja $ R $, gdzie $ a R b $, jeśli $ a - b $ jest podzielne przez 3.  
+Wykaż, że $ R $ jest relacją równoważności.  
+Wyznacz klasy abstrakcji dla tej relacji.
+
+\item  Zapis relacji w postaci macierzy  
+
+Rozważ zbiór $ A = \{1, 2, 3\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $, gdy $ a + b $ jest liczbą nieparzystą.  
+Przedstaw relację $ R $ w postaci macierzy.  
+Na podstawie macierzy ustal, czy relacja $ R $ jest symetryczna.
+
+\end{enumerate}
+
 \section{Matematyka dyskretna}
 \subsection{Zliczania}
 
@@ -352,6 +576,9 @@ Notacje. $|X|$ to moc zbioru $X$.
 $\cP(X)$ to zbiór podzbiorów $X$.
 $\cP^{=k}(X)$ to ilość $k$ elementowych podzbiorów 
 zbioru $X$, gdzie $k\in\bN$.
+
+
+
 
 \subsubsection{Zliczania zbiorów}
 
@@ -486,6 +713,17 @@ to możemy wybrać z nich $10$ moment
 na~$\binom{10+4-1}{4-1}=\binom{13}{3}$
 sposobów.
 
+\begin{thm}[Zasada szufladkowa]
+	Niech $n\geq m\geq 1$. Jeśli $n$ przedmiotów umieścimy w 
+	$m$ pudełkach, to będzie pudełko, w którym znajdzie się
+	przynajmniej $\lceil \frac{n}{m}\rceil$ przedmiotów.
+\end{thm}
+
+\begin{crl}
+	Jeśli $n+1$ przedmiotów umieścimy w $n$ pudełkach, gdzie $n\geq 1$, 
+	to w pewnym pudełku znajdą się przynajmniej dwa przedmioty.
+\end{crl}
+
 \subsubsection{Zadania}
 \begin{enumerate}
 	\item 
@@ -542,10 +780,133 @@ sposobów.
     
     Jak jest szansa na wyrzucenie w sumie~$7$?
     Jak jest szansa na wyrzucenie w sumie~$8$?
+    
+    \item 
+    Układamy ośmio literowe hasło z 26 liter alfabetu. Ile jest haseł, jeśli symbole mogą 
+    się powtarzać. Ile jest takich haseł, w których musi wystąpić przynajmniej jedna 
+    samogłoska (a, e, o, u, i). Ile jest haseł, w których musi wystąpić przynajmniej 
+    jedna samogłoska i przynajmniej jedna spółgłoska.
+    
+    \item 
+    W worku jest 20 kul ponumerowanych od $1$ do $20$. Losujemy (bez zwracania) pięć kul.
+    Jaka jest szansa, że wylosujemy tylko kule o numerach parzystych?
+    Jaka jest szansa, że wylosujemy przynajmniej jedną kulę o numerze parzystym?
+    Jaka jest szansa, że wylosujemy przynajmniej jedną kulę o numerze parzystym
+    i przynajmniej jedną kulę o numerze nieparzystym.
+
+   Jak zmieni sie odpowiedź, jeśli będziemy zwracali po wylosowaniu kule do worka?
+   
+
 \end{enumerate}
 
 
+\subsection{Zadania z ChatGPT}
+
+\subsubsection{Zasada szufladkowa}
+
+\begin{enumerate} 	\item %1. Uczniowie w klasie
+	W klasie jest 26 uczniów, którzy przynieśli na zajęcia 10 różnych książek. Udowodnij, że co najmniej trzech uczniów przyniosło tę samą książkę.
+	
+	\item
+	%2. Urodziny w grupie
+	W grupie liczącej 13 osób udowodnij, że przynajmniej dwie osoby obchodzą urodziny w tym samym miesiącu.
+	
+	\item
+	%3. Liczby w zbiorze
+	Mamy dany zbiór 10 liczb naturalnych z zakresu od 1 do 18. Udowodnij, że istnieją dwie liczby w zbiorze, których różnica wynosi co najwyżej 2.
+	
+	\item
+	%4. Monety w kieszeniach
+	Pięciu przyjaciół ma razem 25 monet. Udowodnij, że przynajmniej jedna osoba ma co najmniej 5 monet.
+	
+	\item
+	%5. Punkty na okręgu
+	Na okręgu rozmieszczono 9 punktów. Udowodnij, że istnieją dwa punkty, których odległość (mierząc po łuku) nie jest większa niż 40 stopni.
+	
+	\item
+	%6. Podział jabłek
+	30 jabłek rozdzielono pomiędzy 8 koszyków. Udowodnij, że przynajmniej w jednym koszyku znajduje się co najmniej 4 jabłka.
+	
+	\item
+	%7. Liczby w zbiorze liczb parzystych
+	Wybieramy 8 różnych liczb całkowitych spośród liczb 2, 4, 6, …, 20. Udowodnij, że wśród wybranych liczb istnieją dwie, których różnica wynosi 4.
+	
+	\item
+	%8. Kolory długopisów
+	Na biurku znajduje się 12 długopisów w trzech różnych kolorach. Udowodnij, że przynajmniej cztery długopisy mają ten sam kolor.
+	
+	\item
+	%9. Punkty w prostokącie
+	W prostokącie umieszczono 6 punktów. Udowodnij, że można wybrać dwa punkty, których odległość jest mniejsza lub równa połowie długości przekątnej prostokąta.
+	
+	\item
+	%10. Klocki o różnych rozmiarach
+	Mamy 7 klocków, każdy o masie całkowitej (w kilogramach) z zakresu od 1 do 12 kg. Udowodnij, że można wybrać dwa klocki, których masy różnią się o co najwyżej 2 kg.
+	
+\end{enumerate}
+
+\subsubsection{Permutacje}
+
+\begin{enumerate}
+	\item 
+	%1. Permutacje liter słowa
+	Ile różnych słów można utworzyć, przestawiając litery w słowie "KOT"?
+	
+	\item 
+	%2. Permutacje z powtórzeniami
+	Ile różnych słów można utworzyć, przestawiając litery w słowie "MAMA"?
+	
+	\item 
+	%3. Siedzenia w rzędzie
+	Czworo dzieci siada w jednym rzędzie na 4 miejscach. Na ile sposobów mogą się usiąść?
+	
+	\item 
+	%4. Miejsca przy okrągłym stole
+	Na ile różnych sposobów pięć osób może usiąść przy okrągłym stole?
+\end{enumerate}
+
+\subsubsection{Kombinacje}
+\begin{enumerate}
+	\item 
+	%5. Wybór drużyny
+	Z grupy 10 osób wybieramy drużynę składającą się z 4 osób. Na ile sposobów można wybrać drużynę?
+	\item 
+	%6. Wybór książek
+	Na półce znajduje się 8 różnych książek. Ile sposobów jest na wybranie 3 książek, które zamierzasz przeczytać?
+	\item 
+	%7. Podzielenie obowiązków
+	Sześcioro przyjaciół chce się podzielić na trzy dwuosobowe zespoły. Na ile sposobów można utworzyć takie zespoły?
+\end{enumerate}
+
+\subsubsection{Wariacje bez powtórzeń i z powtórzeniami}
+
+\begin{enumerate}
+	\item 
+	%8. Wybór uczniów na podium
+	Z grupy 5 uczniów wybieramy trzech, którzy zajmą miejsca na podium (złoto, srebro, brąz). Na ile sposobów można to zrobić?
+	\item 
+	%9. Kod dostępu
+	Do zamka szyfrowego wybieramy 3-cyfrowy kod, gdzie cyfry nie mogą się powtarzać, a do wyboru mamy cyfry od 1 do 5. Na ile sposobów można ustawić taki kod?
+	\item 
+	%10. Układanie książek na półce
+	Na półce mamy 7 różnych książek. Na ile sposobów możemy wybrać i ustawić trzy z nich?
+	\item 
+	%Wariacje z powtórzeniami
+	%11. Układanie liter
+	Na ile sposobów można utworzyć 3-literowe "słowa" z liter A, B, C, przy czym litery mogą się powtarzać?
+	\item 
+	%12. Kod PIN
+	Tworzymy czterocyfrowy kod PIN, przy czym każda cyfra może być dowolnie powtórzona, a do wyboru mamy cyfry od 0 do 9. Na ile sposobów można stworzyć taki PIN?
+	\item 
+	%13. Kolory kulek
+	Mamy do wyboru trzy kolory kulek: czerwony, zielony i niebieski. Na ile sposobów można ułożyć pięć kulek, jeśli mogą być one tego samego koloru?
+	\item 
+	%14. Liczby 2-cyfrowe
+	Na ile sposobów można utworzyć liczbę 2-cyfrową, wybierając cyfry spośród 1, 2, 3, 4, przy czym cyfry mogą się powtarzać?
+\end{enumerate} 
+
 \subsection{Teoria grafów}
+Do uzupełnienia.
 
 \section{Uwagi lub (p)odpowiedzi}
 
