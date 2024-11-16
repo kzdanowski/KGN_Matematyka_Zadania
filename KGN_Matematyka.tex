@@ -112,6 +112,8 @@
 %\newcommand{\set}[1]{{\{#1\}}}
 \newcommand{\imp}{\Rightarrow}
 
+%\newcommand{\isfunc}[3]{{{#1}\colon{#2}\rightarrow{#3}}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\bluemath}[1]{{\setbeamercolor{math text}{fg=blue}{#1}}}
@@ -359,6 +361,9 @@ $$
 	Jeśli $R\subseteq X\times X$ to mówimy, że $R$ jest relacją na $X$.
 \end{dfn}
 
+Zamiast pisać $(x,y)\in R$ będziemy często posługiwać się 
+wygodniejszą notacją $xRy$.
+
 
 Możemy wyróżnić relację pełną, równą $X\times Y$, relację pustą $\emptyset$.
 Wyróżniamy też relację identycznościową na $X$, 
@@ -367,57 +372,119 @@ $$
 $$ 
 
 \begin{dfn}
-	Dziedzina relacji $\dom(R)$.
+	Niech $R\subseteq X\times Y$.
+	Dziedzina relacji $\dom(R)$ nazywamy zbiór elemntów, które występują jako lewy
+	element pary w  relacji,
+	\[ \dom(R)= \{ x\in X\colon \exists y\in Y\, xRy\}.
+	\]
 	
-	Przeciwdziedzina (obraz) relacji $\rng(R)$.
+	Przeciwdziedzina (obraz) relacji $\rng(R)$ to zbiór elementów występujących jako prawy element pary w relacji,
+	\[ \rng(R) = \{ y\in Y \colon \exists x\in X\, xRy\}.\]
 \end{dfn}
 
 \subsection{Jak możemy przedstawić relację?}
 
+Relację możemy opisać jako
 \begin{enumerate}
-	\item Zbiór par,
+	\item zbiór par,
 	\item rysunek,
 	\item macierz.
 \end{enumerate}
 
 Następujące własności relacji bedą dla nas istotne.
 
-\begin{dfn}
+\begin{dfn}[Własności relacji]
 Niech $R$ będzie relacją na $X$. $R$ jest 
 \begin{itemize}
-	\item zwrotna,
-	\item przeciwzwrotna,
-	\item symetryczna,
-	\item przeciwsymetryczna,
-	\item antysymetryczna,
-	\item przechodnia.
+	\item zwrotna gdy $\forall x\in X\, xRx$,
+	\item przeciwzwrotna gdy $\forall x\in X\, \neg xRx$,
+	\item symetryczna gdy $\forall x,y\in X(xRy \imp yRx)$,
+	\item przeciwsymetryczna gdy $\forall x,y\in X(xRy \imp \neg yRx)$,
+	\item antysymetryczna gdy $\forall x,y\in X(xRy \land yRx \imp x=y)$,
+	\item przechodnia gdy $\forall x,y,z\in X (xRy\land yRz \imp xRz)$,
+	\item spójna gdy $\forall x,y\in X(xRy \lor yRx)$.
 \end{itemize}	
 \end{dfn}
 
 \begin{dfn}[Rodzaje relacji]
 	\begin{itemize}
-		\item Relacja równoważności,
-		\item Relacja (częściowego) porządku
-		\item Relacja liniowego porządku
+		\item $R$ jest relacją równoważności gdy jest zwrotna, symetryczna i przechodnia.
+		\item $R$ jest relacją (częściowego) porządku gdy jest zwrotna, antysymetryczna i przechodnia.
+		\item $R$ jest relacją ostrego porządku gdy jest przeciwzwrotna, przeciwsymetryczna i przechodnia.
+		\item $R$ jest relacja liniowego porządku jeśli jest relacją porządku i jest spójna (czyli dowolne dwa elementy są ze sobą porównywalne).
 	\end{itemize}
+	
 \end{dfn}
 
+
+	Jeśli $R$ jest relacją porządku, to $S$ zdefiniowane jako 
+\[ xSy \iff xRy \land x\not= y\]
+jest odpowiadającym mu ostrym porządkiem.
+
+Jeśli $S$ jest relacją ostrego porządku, to $R$ zdefiniowane jako 
+\[ xRy \iff xSy \lor x= y\]
+jest odpowiadającym mu porządkiem.
+
+
+	Jeśli relacja $R$ jest relacją równoważnośći na $X$, to definiuje 
+podział zbioru $X$ na rozłączne podzbiory.
 
 \begin{dfn}[Klasa abstrakcji]
+Niech $R$ będzie relacją równoważnośći na zbiorze $X$ i niech $a\in X$.
+Klasa abstrakcji $a$ względem $R$ to zbiór elementów, które wchodzą 
+w relację z $a$. Klasę abstrakcji oznaczamy przez
+\[ 
+[a]_R = \{ x\in X\colon aRx\}.
+\]
 \end{dfn}
+Każde dwie różne klasy abstrakcji są rozłączne. 
+Zbiór klas abstrakcji $\{ [a]_R \}_{a\in X}$ definiuje podział zbioru $X$
+na rozłączne podzbiory. 
+
 
 \subsection{Operacje na relacjach}
 
 \begin{dfn}
+	Niech $R\subseteq X\times Y$, $S\subseteq Y\times Z$. 
 	\begin{itemize}
-		\item relacja odwrotna $R^{-1}$,
-		\item złożenie relacji $R\circ S$,
-		\item tranzytywne domknięcie $R^*$.
+		\item Relacja odwrotna 
+		 \[R^{-1} = \{ (y,x)\in Y\times X\colon xRy \}.\]
+		\item Złożenie relacji $S\circ R\subseteq X\times Z$ 
+		to relacja między $X$ i $Z$ zdefiniowana jako 
+		\[ 
+		S\circ R = \{ (x,z)\in X\times Z\colon \exists y\in Y(xRy \land yRz)\}.
+		\]
+		\item Tranzytywne domknięcie relacji $R$ to najmniejsza relacja przechodnia zawierająca $R$. Tranzytywne domknięcie $R$ oznaczamy często 
+		przez $R^*$.
 	\end{itemize}
 \end{dfn}
 
 	
 \subsection{Funkcje}
+
+\begin{dfn}
+	Niech $R\subseteq X\times Y$. 
+	$R$ jest funkcją jeśli 
+	\[
+	 \forall x\in X \forall y,z \in Y(xRy\land xRz \imp y=z)
+	\]
+	
+	Piszemy $f\colon X\rightarrow Y$ jeśli $f\subseteq X\times Y$, $f$ jest funkcją oraz $\dom(f) = X$.
+	
+	Jeśli $\isfunc{f}{X}{Y}$ i $(xfy)$ to piszemy $f(x)$ na oznaczenie 
+	$y$. 
+\end{dfn}
+
+\begin{dfn}
+	Niech $\isfunc{f}{X}{Y}$ i $\isfunc{g}{Y}{Z}$.
+	\begin{itemize}
+		\item $f$ jest injekcją (różnowartościowa, 1-1) gdy
+		dla każdych $\forall x,y \in X (f(x)=f(y)\imp x=y) $,
+		\item $f$ jest surjekcją (,,na'') gdy 
+		$\forall y\in Y\exists x\in X f(x)=y$,
+		\item $f$ jest bijekcją jeśli jest injekcją i surjekcją.
+	\end{itemize}
+\end{dfn}
 
 
 \subsection{Zadania (ChatGPT)}
@@ -480,22 +547,26 @@ Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \
 x \, R \, y \text{ wtedy i tylko wtedy, gdy suma liczb } x \text{ i } y \text{ jest liczbą parzystą.}
 \]
 Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
+Jeśli tak, to jakie są jej klasy abstrakcji?
 
 \item 
- Relacja równości.
+ Relacja identyczności $\id$.
 
 Rozważ zbiór $ S = \{1, 2, 3\} $. Zdefiniuj relację $ R $ na $ S $ jako:
 \[
 x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
 \]
 Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+Jeśli $R$ jest relacją równoważności, to jakie są jej klasy abstrakcji.
+
+
 
 \item 
-Relacja ,,dzielenie się przestrzenią''.
+Relacja ,,wspólnej współrzędnej''.
 
 Rozważ zbiór punktów na płaszczyźnie $ \mathbb{R}^2 $. Zdefiniuj relację $ R $ na $ \mathbb{R}^2 $ jako:
 \[
-(x_1, y_1) \, R \, (x_2, y_2) \text{ wtedy i tylko wtedy, gdy } x_1 = x_2 \text{ i } y_1 = y_2.
+(x_1, y_1) \, R \, (x_2, y_2) \text{ wtedy i tylko wtedy, gdy } x_1 = x_2 \lor  y_1 = y_2.
 \]
 Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
 
@@ -538,7 +609,7 @@ Jeśli tak, to jak wyglądają jej klasy abstrakcji.
 \item 
 Relacja na zbiorze punktów  
 
-Na płaszczyźnie rozważmy zbiór punktów $ A = \{(0,0), (1,1), (2,2), (1,0), (2,1)\} $. Zdefiniuj relację $ R $ jako $ (x_1, y_1) R (x_2, y_2) $, jeśli $ x_1 = x_2 $.  
+Na płaszczyźnie rozważmy zbiór punktów $ A = \{(0,0), (1,1), (2,2), (1,0), (2,1)\} $. Zdefiniuj relację $ R $ jako $ (x_1, y_1) R (x_2, y_2) $, jeśli $ x_1 = x_2 \lor y_1 = y_2$.  
 Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
 
 \item 
