@@ -193,163 +193,9 @@
 Tekst ten zawiera listę najbardziej istotnych definicji
 i twierdzeń z wykładu oraz przykładowe zadania.
 
-\section{Teoria liczb}
-\subsection{Faktoryzacja, $\gcd$, $\lcm$}
-\begin{enumerate}
-    \item Czy 113, 201, 213 to liczby pierwsze? 
-        (\cite[4.6.3, zad. 2]{Forman.2015})
-     \item Znajdź faktoryzację: 3465, 40 320, 14641.  (\cite{Forman.2015})	
-\item  Czy 1 111 111 111 jest pierwsza? (\cite{Forman.2015})
-\item Niech $m = 2^2*3^3 * 5 * 7* 11$,  $n = 2*3*11$.
-   Wyznacz $\gcd$, $\lcm$. (\cite{Forman.2015})
-\item Niech $m = 5^2*7*11*13^2$, $n = 2*3*7^3*11^2*13$,
-            $k=3*5*7^2*11^3$.
-   Wyznacz $\gcd(m,n,k)$, $\lcm(m,n,k)$. 
-\item 
- Czy jest nieskończenie wiele liczb pierwszych postaci $n^2 - 49$,
- dla pewnego $n\in\NN$? (\cite{Forman.2015})
-\item 
-Jeśli $p$ jest pierwsza, to czy $2^p - 1$ jest pierwsza? (\cite{Forman.2015})
-\item  (\cite{Forman.2015})
- Wyznacz
-    $\gcd(756, 2205),
-    \gcd(4725, 17460), 
-    \gcd(465, 3861),
-    \gcd(4600, 2116), \\
-    \gcd(630, 990), 
-    \gcd(96, 144)$.
-
-Wyznacz
-$\lcm(756, 2205),
-\lcm(4725, 17460),
-\lcm(465, 3861),
-\lcm(4600, 2116),\\
-\lcm(630, 990),
-\lcm(96, 144)$.
-
-
-\item Wyznacz wszystkie liczby, których nie dzieli
-żadna liczba pierwsza większa od pięciu i które mają 
-dokładnie pięć dzielników.
-
-\item Wyznacz wszystkie liczby, które dzielą $5*7$. 
-      Ile jest takich liczb?
-
-
-\end{enumerate}
-
-
-
-\subsection{Przystawanie modulo}\label{subsec:modulo}
-\begin{enumerate}
-    \item Rozstrzygnij, czy jest prawdą
-    \begin{itemize}
-        \item
-    $0 \equiv 6 \pmod 3$,
-    \item
- $35 \equiv 55 \pmod 9$,
-\item  $(-23) \equiv 20 \pmod 7$
- \item $(-3) \equiv 3 \pmod 6$,
- \item $(-2) \equiv 2 \pmod 3$,
- \item $16 \equiv 185 \pmod 11.$
- \end{itemize}
-    (\cite[sec. 6.1, p. 154]{Forman.2015})
-
-
-
-\item
-Wyznacz wszystkie liczby $n\in \bbZ$ takie, że
-$n\equiv 2 \pmod 5$.
-\item 
-Czy $(-1)\equiv 1 \pmod 2$?
-
-\item Wyznacz resztę z dzielenia liczby $17*23*45$ przez $8$.
- Wyznacz resztę z dzielenia liczby $17*23*45$ przez $5$.
-
-Nie używaj kalkulatora.
-
-\item Znajdź $n\in \NN$ takie, że $n\equiv 3 \pmod 5$ i 
-$n\equiv 2 \pmod 3$.
-
-\item Znajdź $n\in \NN$ takie, że $n\equiv 4 \pmod 4$ i 
-$n\equiv 2 \pmod 5$.
-
-\item Nie znajdź $n\in \NN$ takiego, że
-$n\equiv 3 \pmod 6$ is $n\equiv 0 \pmod 2$.
-
-Dlaczego takie $n$ nie istnieje?
-
-\item Nie znajdź $n\in \NN$ takiego, że
-$n\equiv 3 \pmod 6$ is $n\equiv 2 \pmod 9$.
-
-Dlaczego takie $n$ nie istnieje?
-
-\item Wyznacz wszystkie liczby, które dzielą $5*7$. 
- 
-
-\item \label{exc:modpowers}
-
- Korzystając z Twierdzenia Eulera ($a^{\varphi(n)} \equiv 1 \pmod n$, gdy $\gcd(a,n)=1$) i Małego Twierdzenia Fermata 
-($x^{p-1}\equiv 1 \pmod p$, dla liczby pierwszej $p$)
-i z tego, że relacja przystawania modulo jest kongruencją
-względem dodawania i mnożenia,
-oblicz
-\begin{itemize}
-    \item $3^{100} \bmod 5$,
-    \item $5^{100} \bmod 7$,
-    \item $3^{100}\bmod 10$,
-    \item $3^{100}\bmod 6$ (uwaga),
-    \item $4^{100}\bmod 9$,
-    \item $2^{2^{100}} \bmod 5$,
-    \item $5^{5^{100}} \bmod 3$.
-\end{itemize}
-
-\end{enumerate}
-
-\subsection{Indukcja}\label{ss:indukcja}
-\begin{enumerate}
-    \item Udowodnij $\Sigma_{i=1}^n i = \frac{n(n+1)}{2}$. 
-    \item Udowodnij $\Sigma_{i=0}^n (2i+1) = (n+1)^2$
-           (sumę $n$ pierwszych liczb nieparzystych).
-    \item Udowodnij, dla każdego $n\geq 1$, dla wszystkich $x_1,\dots, x_n\in \bR$, $|x_1 + ... + x_n| \leq  |x_1| + ... + |x_n|$.
-\item 
-Dla dowolnego  $n\geq 1$, $\forall x \in (0,1)\, x^n \leq  x$.
-
-Skorzystaj z faktu, że dla dowolnych $a,b$, jeśli $0\leq a < 1$ i $b\geq 0$, to $ab<b$.
-
-\item 
-Udowodnij, że dla dowolnego $n$, $\Sigma_{i=0}^n \frac{1}{2^i} \leq 2$.
-
-Rozważ wzmocnienie  tezy, 
-do $\Sigma_{i=0}^n \frac{1}{2^i} \leq 2-\frac{1}{2^{n}}$.
-
-\item \label{ind:2nn2} Udowodnij, że dla dowolnego $n\geq 4$, $2^n\geq  n^2$.
-
-Której części dowodu indukcyjnego nie można przeprowadzić 
-dla tezy $\forall n\geq 0\, (2^n\geq n^2)$.
-
-Której części dowodu indukcyjnego nie można przeprowadzić 
-dla tezy $\forall n\geq 3\, (2^n\geq n^2)$.
-
-\item Ciąg Fibbonacciego definiujmy jako 
-$F(1)=F(2)=1$, oraz $F(n+2)=F(n)+F(n+1)$ dla $n\geq 1$.
-
-
-Udowodnij, że dla $n\geq 1$, 
-$$
-F(n)=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n- 
-    \frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n.
-$$
-
-\item 
-(Nierówność  Bernoulliego,  uproszczony przypadek) Dla dowolnego $n\geq 1$, 
-\[
-\forall x \geq 0\, ((1+x)^n \geq (1+nx)).
-\]
-
-\end{enumerate}
-
+%\section{Teoria liczb}
 \section{Teoria relacji i funkcji}
+\subsection{Relacje}
 
 \begin{dfn}
 	Niech $X$, $Y$ będą dowolnymi zbiorami. Iloczyn kartezjański $X\times Y$ 
@@ -382,7 +228,7 @@ $$
 	\[ \rng(R) = \{ y\in Y \colon \exists x\in X\, xRy\}.\]
 \end{dfn}
 
-\subsection{Jak możemy przedstawić relację?}
+\subsubsection{Jak możemy przedstawić relację?}
 
 Relację możemy opisać jako
 \begin{enumerate}
@@ -442,7 +288,7 @@ Zbiór klas abstrakcji $\{ [a]_R \}_{a\in X}$ definiuje podział zbioru $X$
 na rozłączne podzbiory. 
 
 
-\subsection{Operacje na relacjach}
+\subsubsection{Operacje na relacjach}
 
 \begin{dfn}
 	Niech $R\subseteq X\times Y$, $S\subseteq Y\times Z$. 
@@ -479,166 +325,36 @@ na rozłączne podzbiory.
 	Niech $\isfunc{f}{X}{Y}$ i $\isfunc{g}{Y}{Z}$.
 	\begin{itemize}
 		\item $f$ jest injekcją (różnowartościowa, 1-1) gdy
-		dla każdych $\forall x,y \in X (f(x)=f(y)\imp x=y) $,
+		dla każdych \[\forall x,y \in X (f(x)=f(y)\imp x=y) ,\]
 		\item $f$ jest surjekcją (,,na'') gdy 
 		$\forall y\in Y\exists x\in X f(x)=y$,
 		\item $f$ jest bijekcją jeśli jest injekcją i surjekcją.
+		\item 
+		Złożenie funkcji $f$ i $g$ to funkcja oznaczana przez
+		$g\circ f$ i zdefiniowana jako
+		\[
+		(g\circ f)(x)= g(f(x)).
+		\]
 	\end{itemize}
 \end{dfn}
 
-
-\subsection{Zadania (ChatGPT)}
-
-\begin{enumerate} 
-
-\item 
-Relacja na zbiorze liczb całkowitych.
-
-Rozważ zbiór liczb całkowitych $\mathbb{Z}$. Zdefiniuj relację $R$ na $\mathbb{Z}$ jako: 
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
-\]
-Udowodnij, że relacja $R$ jest zwrotna, symetryczna i przechodnia.
-
-\item 
- Relacja "większe niż"
-
-Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy } x > y.
-\]
-Sprawdź, czy relacja $ R $ jest antysymetryczna i przechodnia.
-Udowodnij, że ta relacja nie jest zwrotna.
-
-\item
- Relacja na zbiorze osób.
-
-Rozważ zbiór osób $ P = \{A, B, C\} $. Zdefiniuj relację $ R $ na $ P $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy osoba } x \text{ jest starsza od osoby } y.
-\]
-Sprawdź, czy relacja $ R $ jest antysymetryczna i przechodnia.
-Czy relacja jest zwrotna? Uzasadnij odpowiedź.
-
-\item
- Relacja podzielności.
-
-Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy } x \text{ jest podzielne przez } y.
-\]
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
-
-\item 
- Relacja ,,przyjaciele''.
-
-Rozważ zbiór osób $ P $ i zdefiniuj relację $ R $ na $ P $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy osoby } x \text{ i } y \text{ są przyjaciółmi}.
-\]
- Czy relacja $ R $ jest symetryczna? Uzasadnij odpowiedź.
-Czy relacja $ R $ jest zwrotna? Uzasadnij odpowiedź.
-
-\item 
-Relacja ,,parzystość'',
-
-Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy suma liczb } x \text{ i } y \text{ jest liczbą parzystą.}
-\]
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
-Jeśli tak, to jakie są jej klasy abstrakcji?
-
-\item 
- Relacja identyczności $\id$.
-
-Rozważ zbiór $ S = \{1, 2, 3\} $. Zdefiniuj relację $ R $ na $ S $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
-\]
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
-Jeśli $R$ jest relacją równoważności, to jakie są jej klasy abstrakcji.
+\begin{dfn}
+	Niech $\isfunc{f}{X}{Y}$ i $A\subseteq X$. 
+	Ograniczenie $f$ do zbioru $A$, to funkcja 
+	$$
+	f\upharpoonright A = \{ (x,y)\in A\times Y \colon f(x) = y\}.
+	$$
+\end{dfn}
+Inaczej, $f\upharpoonright A = f \cap (A\times Y)$ lub po prostu
+są to te pary $(x,y)\in f$, dla których argument $x\in A$.
 
 
+Jeśli $f$ jest funkcją, to $f^{-1}$ jest funkcją wtedy i tylko wtedy
+gdy $f$ jest różnowartościowa. Wtedy, $f^{-1}$ jest funkcją z $\rng(f)$.
 
-\item 
-Relacja ,,wspólnej współrzędnej''.
-
-Rozważ zbiór punktów na płaszczyźnie $ \mathbb{R}^2 $. Zdefiniuj relację $ R $ na $ \mathbb{R}^2 $ jako:
-\[
-(x_1, y_1) \, R \, (x_2, y_2) \text{ wtedy i tylko wtedy, gdy } x_1 = x_2 \lor  y_1 = y_2.
-\]
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
-
-\item 
-Relacja ,,bycie większym lub równym''.
-
-Rozważ zbiór liczb całkowitych $ \mathbb{Z} $. Zdefiniuj relację $ R $ na $ \mathbb{Z} $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy } x \geq y.
-\]
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
-
-\item 
- Relacja na zbiorze liter.
-
-Rozważ zbiór liter $ A, B, C, D $. Zdefiniuj relację $ R $ jako:
-\[
-x \, R \, y \text{ wtedy i tylko wtedy, gdy litera } x \text{ sasiąduje z } y \text{ w alfabecie.}
-\]
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, antysymetryczna i przechodnia.
-
-\item 
-Własności relacji na zbiorze liczb  
-
-Niech $ R $ będzie relacją na zbiorze $ A = \{1, 2, 3, 4\} $ zdefiniowaną jako $ a R b $, jeśli $ a \leq b $.  
-Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
-
-\item 
-Relacja podzielności  
-
-Niech $ R $ będzie relacją na zbiorze liczb całkowitych $ A = \{2, 3, 6, 9, 12\} $, gdzie $ a R b $ zachodzi, gdy $ a $ dzieli $ b $ bez reszty.  
-Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
-
-\item 
-Relacja równości modulo  
-
-Rozważ zbiór $ A = \{0, 1, 2, 3, 4, 5\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $, gdy $ a \equiv b \pmod{2} $.  
-Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
-Jeśli tak, to jak wyglądają jej klasy abstrakcji.
-\item 
-Relacja na zbiorze punktów  
-
-Na płaszczyźnie rozważmy zbiór punktów $ A = \{(0,0), (1,1), (2,2), (1,0), (2,1)\} $. Zdefiniuj relację $ R $ jako $ (x_1, y_1) R (x_2, y_2) $, jeśli $ x_1 = x_2 \lor y_1 = y_2$.  
-Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
-
-\item 
-Relacja porządku  
-
-Niech $ R $ będzie relacją na zbiorze $ A = \{a, b, c\} $ zdefiniowaną jako $ a R b $, jeśli $ a $ jest "mniejsze lub równe" od $ b $ według pewnej kolejności alfabetycznej.  
-Sprawdź, czy relacja $ R $ jest relacją porządku częściowego.  
-Zapisz diagram Hassego dla tej relacji.
-
-\item 
- Właściwości relacji na zbiorze liczb  
-
-Rozważ zbiór $ A = \{1, 2, 3, 4, 5\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $ wtedy i tylko wtedy, gdy $ a + b $ jest liczbą parzystą.  
-Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.  
-
-\item 
-Klasy abstrakcji  
-
-Na zbiorze $ A = \{1, 2, 3, 4, 5, 6\} $ zdefiniowana jest relacja $ R $, gdzie $ a R b $, jeśli $ a - b $ jest podzielne przez 3.  
-Wykaż, że $ R $ jest relacją równoważności.  
-Wyznacz klasy abstrakcji dla tej relacji.
-
-\item  Zapis relacji w postaci macierzy  
-
-Rozważ zbiór $ A = \{1, 2, 3\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $, gdy $ a + b $ jest liczbą nieparzystą.  
-Przedstaw relację $ R $ w postaci macierzy.  
-Na podstawie macierzy ustal, czy relacja $ R $ jest symetryczna.
-
-\end{enumerate}
+Złożenie dwóch iniekcji jest iniekcją. Złożenie dwóch surjekcji 
+jest suriekcją.
+ 
 
 \section{Matematyka dyskretna}
 \subsection{Zliczania}
@@ -795,7 +511,432 @@ sposobów.
 	to w pewnym pudełku znajdą się przynajmniej dwa przedmioty.
 \end{crl}
 
-\subsubsection{Zadania}
+\subsection{Teoria grafów}
+Do uzupełnienia.
+
+\section{Zadania}
+\subsection{Teoria liczb}
+\subsubsection{Faktoryzacja, $\gcd$, $\lcm$}
+\begin{enumerate}
+	\item Czy 113, 201, 213 to liczby pierwsze? 
+	(\cite[4.6.3, zad. 2]{Forman.2015})
+	\item Znajdź faktoryzację: 3465, 40 320, 14641.  (\cite{Forman.2015})	
+	\item  Czy 1 111 111 111 jest pierwsza? (\cite{Forman.2015})
+	\item Niech $m = 2^2*3^3 * 5 * 7* 11$,  $n = 2*3*11$.
+	Wyznacz $\gcd$, $\lcm$. (\cite{Forman.2015})
+	\item Niech $m = 5^2*7*11*13^2$, $n = 2*3*7^3*11^2*13$,
+	$k=3*5*7^2*11^3$.
+	Wyznacz $\gcd(m,n,k)$, $\lcm(m,n,k)$. 
+	\item 
+	Czy jest nieskończenie wiele liczb pierwszych postaci $n^2 - 49$,
+	dla pewnego $n\in\NN$? (\cite{Forman.2015})
+	\item 
+	Jeśli $p$ jest pierwsza, to czy $2^p - 1$ jest pierwsza? (\cite{Forman.2015})
+	\item  (\cite{Forman.2015})
+	Wyznacz
+	$\gcd(756, 2205),
+	\gcd(4725, 17460), 
+	\gcd(465, 3861),
+	\gcd(4600, 2116), \\
+	\gcd(630, 990), 
+	\gcd(96, 144)$.
+	
+	Wyznacz
+	$\lcm(756, 2205),
+	\lcm(4725, 17460),
+	\lcm(465, 3861),
+	\lcm(4600, 2116),\\
+	\lcm(630, 990),
+	\lcm(96, 144)$.
+	
+	
+	\item Wyznacz wszystkie liczby, których nie dzieli
+	żadna liczba pierwsza większa od pięciu i które mają 
+	dokładnie pięć dzielników.
+	
+	\item Wyznacz wszystkie liczby, które dzielą $5*7$. 
+	Ile jest takich liczb?
+	
+	
+\end{enumerate}
+
+
+
+\subsubsection{Przystawanie modulo}\label{subsec:modulo}
+\begin{enumerate}
+	\item Rozstrzygnij, czy jest prawdą
+	\begin{itemize}
+		\item
+		$0 \equiv 6 \pmod 3$,
+		\item
+		$35 \equiv 55 \pmod 9$,
+		\item  $(-23) \equiv 20 \pmod 7$
+		\item $(-3) \equiv 3 \pmod 6$,
+		\item $(-2) \equiv 2 \pmod 3$,
+		\item $16 \equiv 185 \pmod 11.$
+	\end{itemize}
+	(\cite[sec. 6.1, p. 154]{Forman.2015})
+	
+	
+	
+	\item
+	Wyznacz wszystkie liczby $n\in \bbZ$ takie, że
+	$n\equiv 2 \pmod 5$.
+	\item 
+	Czy $(-1)\equiv 1 \pmod 2$?
+	
+	\item Wyznacz resztę z dzielenia liczby $17*23*45$ przez $8$.
+	Wyznacz resztę z dzielenia liczby $17*23*45$ przez $5$.
+	
+	Nie używaj kalkulatora.
+	
+	\item Znajdź $n\in \NN$ takie, że $n\equiv 3 \pmod 5$ i 
+	$n\equiv 2 \pmod 3$.
+	
+	\item Znajdź $n\in \NN$ takie, że $n\equiv 4 \pmod 4$ i 
+	$n\equiv 2 \pmod 5$.
+	
+	\item Nie znajdź $n\in \NN$ takiego, że
+	$n\equiv 3 \pmod 6$ is $n\equiv 0 \pmod 2$.
+	
+	Dlaczego takie $n$ nie istnieje?
+	
+	\item Nie znajdź $n\in \NN$ takiego, że
+	$n\equiv 3 \pmod 6$ is $n\equiv 2 \pmod 9$.
+	
+	Dlaczego takie $n$ nie istnieje?
+	
+	\item Wyznacz wszystkie liczby, które dzielą $5*7$. 
+	
+	
+	\item \label{exc:modpowers}
+	
+	Korzystając z Twierdzenia Eulera ($a^{\varphi(n)} \equiv 1 \pmod n$, gdy $\gcd(a,n)=1$) i Małego Twierdzenia Fermata 
+	($x^{p-1}\equiv 1 \pmod p$, dla liczby pierwszej $p$)
+	i z tego, że relacja przystawania modulo jest kongruencją
+	względem dodawania i mnożenia,
+	oblicz
+	\begin{itemize}
+		\item $3^{100} \bmod 5$,
+		\item $5^{100} \bmod 7$,
+		\item $3^{100}\bmod 10$,
+		\item $3^{100}\bmod 6$ (uwaga),
+		\item $4^{100}\bmod 9$,
+		\item $2^{2^{100}} \bmod 5$,
+		\item $5^{5^{100}} \bmod 3$.
+	\end{itemize}
+	
+\end{enumerate}
+
+\subsubsection{Indukcja}\label{ss:indukcja}
+\begin{enumerate}
+	\item Udowodnij $\Sigma_{i=1}^n i = \frac{n(n+1)}{2}$. 
+	\item Udowodnij $\Sigma_{i=0}^n (2i+1) = (n+1)^2$
+	(sumę $n$ pierwszych liczb nieparzystych).
+	\item Udowodnij, dla każdego $n\geq 1$, dla wszystkich $x_1,\dots, x_n\in \bR$, $|x_1 + ... + x_n| \leq  |x_1| + ... + |x_n|$.
+	\item 
+	Dla dowolnego  $n\geq 1$, $\forall x \in (0,1)\, x^n \leq  x$.
+	
+	Skorzystaj z faktu, że dla dowolnych $a,b$, jeśli $0\leq a < 1$ i $b\geq 0$, to $ab<b$.
+	
+	\item 
+	Udowodnij, że dla dowolnego $n$, $\Sigma_{i=0}^n \frac{1}{2^i} \leq 2$.
+	
+	Rozważ wzmocnienie  tezy, 
+	do $\Sigma_{i=0}^n \frac{1}{2^i} \leq 2-\frac{1}{2^{n}}$.
+	
+	\item \label{ind:2nn2} Udowodnij, że dla dowolnego $n\geq 4$, $2^n\geq  n^2$.
+	
+	Której części dowodu indukcyjnego nie można przeprowadzić 
+	dla tezy $\forall n\geq 0\, (2^n\geq n^2)$.
+	
+	Której części dowodu indukcyjnego nie można przeprowadzić 
+	dla tezy $\forall n\geq 3\, (2^n\geq n^2)$.
+	
+	\item Ciąg Fibbonacciego definiujmy jako 
+	$F(1)=F(2)=1$, oraz $F(n+2)=F(n)+F(n+1)$ dla $n\geq 1$.
+	
+	
+	Udowodnij, że dla $n\geq 1$, 
+	$$
+	F(n)=\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}}{2}\right)^n- 
+	\frac{1}{\sqrt{5}}\left(\frac{1-\sqrt{5}}{2}\right)^n.
+	$$
+	
+	\item 
+	(Nierówność  Bernoulliego,  uproszczony przypadek) Dla dowolnego $n\geq 1$, 
+	\[
+	\forall x \geq 0\, ((1+x)^n \geq (1+nx)).
+	\]
+	
+\end{enumerate}
+
+
+\subsection{Relacje -- zadania}
+
+\begin{enumerate}
+	\item Wypisz wszystkie relacje na zbiorze $X={0,1}$.
+	Przedstaw wybrane relacje w postaci macierzowej.
+	
+	Wypisz trzy relacje na zbiorze $Y=\{0,1,2\}$
+	i przedstaw je w postaci macierzowej.
+	
+	Wypisz wszystkie relacje porządku na zbiorze $Y$.
+	Wypisz wszystkie relacje liniowego porządku na~$Y$.
+	Ile jest relacji liniowego porządku na zbiorze~$n$ elementowym?
+	
+	\item 
+	Niech $R$ będzie relacją na zbiorze $X=\{0,1,\dots, 6\}$
+	zdefiniowaną jako $aRb$ gdy $\max(a,b)+a \leq \min(a,b)+b$.
+	
+	Wyznacz własności relacji $R$.
+	Oblicz złożenie $R\circ R$. Oblicz $R^{-1}$. 
+	Oblicz $R\circ R^{-1}$.
+	
+	\item 
+	Rozważ relację $R$ na zbiorze $\{(0,0), (1,1), (2,2), (1,0), (2,1)\}$
+	gdzie $(x_1,y_1)R(x_2,y_2)$ gdy $x_1=y_1\lor x_2=y_2$.
+	
+	Określ jej własności.
+	
+	\item 
+	Określ własności relacji na $\bN$, 
+	\begin{enumerate}
+		\item $xRy$ gdy $\gcd(x,y)=1$,
+		\item $xSy$ gdy $\lcm(x,y)=x*y$.
+	\end{enumerate}
+	
+	\item 
+	Wyznacz klasy abstrakcji relacji na $\{2,3,4,5,6,7,8,9,10, 11, 12, 13, 14, 15, 16, 17,18\}$
+	zdefiniowanej jako $xRy$ gdy $\mathrm{Supp}(x)=\mathrm{Supp}(y)$,
+	gdzie $\mathrm{Supp}(x)$ to zbiór liczb pierwszych, które dzielą $x$.
+	
+	\item 
+	Znajdź relację symetryczną i przechodnią, która nie jest zwrotna.
+	
+	\item Znajdź relację symetryczną i zwrotną, która nie jest przechodnia.
+	
+	\item Znajdź relację zwrotną i przechodnią, która nie jest symetryczna.
+	
+	\item Znajdź relację przechodnią, symetryczną i przeciwzwrotną.
+	
+	\item 
+	Narysuj na układzie współrzędnych kartezjańskich zbiór punktów $(x,y)$
+	należacych do poniższych relacji
+	\begin{enumerate}
+		\item $y=|x|$,
+	\item $|y|=|x|$,
+	\item $y=x^2$,
+	\item $x=y^2$,
+	\item $x\leq y$,
+	\item $y\leq x^2+1$,
+	\item $y\geq x^2+1$,
+	\item $x^2+y^2\leq 1$.
+\end{enumerate}
+Jeśli któraś z tych relacji jest relacją równoważności, to wyznacz
+jej klasy abstrakcji.
+
+\item 
+Wyznacz klasy abstrakcji relacji na $\bN^2$ zdefiniowanej jako
+$(x,y)R(a,b)$ gdy $x+y=a+b$.
+
+\item 
+Czy jest relacją równoważności na $\bN^2$ relacja zdefiniowana jako
+$(x,y)R(a,b)$ gdy $x+b = y+a$.
+
+
+
+\end{enumerate}
+
+\subsection{Relacje, zadania (ChatGPT, zmodyfikowane)}
+\begin{enumerate} 
+
+\item 
+Relacja na zbiorze liczb całkowitych.
+
+Rozważ zbiór liczb całkowitych $\mathbb{Z}$. Zdefiniuj relację $R$ na $\mathbb{Z}$ jako: 
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
+\]
+Udowodnij, że relacja $R$ jest zwrotna, symetryczna i przechodnia.
+
+\item 
+Relacja "większe niż"
+
+Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x > y.
+\]
+Sprawdź, czy relacja $ R $ jest antysymetryczna i przechodnia.
+Udowodnij, że ta relacja nie jest zwrotna.
+
+\item
+Relacja na zbiorze osób.
+
+Rozważ zbiór osób $ P = \{A, B, C\} $. Zdefiniuj relację $ R $ na $ P $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy osoba } x \text{ jest starsza od osoby } y.
+\]
+Sprawdź, czy relacja $ R $ jest antysymetryczna i przechodnia.
+Czy relacja jest zwrotna? Uzasadnij odpowiedź.
+
+\item
+Relacja podzielności.
+
+Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x \text{ jest podzielne przez } y.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
+
+\item 
+Relacja ,,przyjaciele''.
+
+Rozważ zbiór osób $ P $ i zdefiniuj relację $ R $ na $ P $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy osoby } x \text{ i } y \text{ są przyjaciółmi}.
+\]
+Czy relacja $ R $ jest symetryczna? Uzasadnij odpowiedź.
+Czy relacja $ R $ jest zwrotna? Uzasadnij odpowiedź.
+
+\item 
+Relacja ,,parzystość'',
+
+Rozważ zbiór liczb naturalnych $ \mathbb{N} $. Zdefiniuj relację $ R $ na $ \mathbb{N} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy suma liczb } x \text{ i } y \text{ jest liczbą parzystą.}
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna i przechodnia.
+Jeśli tak, to jakie są jej klasy abstrakcji?
+
+\item 
+Relacja identyczności $\id$.
+
+Rozważ zbiór $ S = \{1, 2, 3\} $. Zdefiniuj relację $ R $ na $ S $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x = y.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+Jeśli $R$ jest relacją równoważności, to jakie są jej klasy abstrakcji.
+
+
+
+\item 
+Relacja ,,wspólnej współrzędnej''.
+
+Rozważ zbiór punktów na płaszczyźnie $ \mathbb{R}^2 $. Zdefiniuj relację $ R $ na $ \mathbb{R}^2 $ jako:
+\[
+(x_1, y_1) \, R \, (x_2, y_2) \text{ wtedy i tylko wtedy, gdy } x_1 = x_2 \lor  y_1 = y_2.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+
+\item 
+Relacja ,,bycie większym lub równym''.
+
+Rozważ zbiór liczb całkowitych $ \mathbb{Z} $. Zdefiniuj relację $ R $ na $ \mathbb{Z} $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy } x \geq y.
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia i antysymetryczna.
+
+\item 
+Relacja na zbiorze liter.
+
+Rozważ zbiór liter $ A, B, C, D $. Zdefiniuj relację $ R $ jako:
+\[
+x \, R \, y \text{ wtedy i tylko wtedy, gdy litera } x \text{ sasiąduje z } y \text{ w alfabecie.}
+\]
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, antysymetryczna i przechodnia.
+
+\item 
+Własności relacji na zbiorze liczb  
+
+Niech $ R $ będzie relacją na zbiorze $ A = \{1, 2, 3, 4\} $ zdefiniowaną jako $ a R b $, jeśli $ a \leq b $.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+
+\item 
+Relacja podzielności  
+
+Niech $ R $ będzie relacją na zbiorze liczb całkowitych $ A = \{2, 3, 6, 9, 12\} $, gdzie $ a R b $ zachodzi, gdy $ a $ dzieli $ b $ bez reszty.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+
+\item 
+Relacja równości modulo  
+
+Rozważ zbiór $ A = \{0, 1, 2, 3, 4, 5\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $, gdy $ a \equiv b \pmod{2} $.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+Jeśli tak, to jak wyglądają jej klasy abstrakcji.
+\item 
+Relacja na zbiorze punktów  
+
+Na płaszczyźnie rozważmy zbiór punktów $ A = \{(0,0), (1,1), (2,2), (1,0), (2,1)\} $. Zdefiniuj relację $ R $ jako $ (x_1, y_1) R (x_2, y_2) $, jeśli $ x_1 = x_2 \lor y_1 = y_2$.  
+Ustal, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.
+
+\item 
+Relacja porządku  
+
+Niech $ R $ będzie relacją na zbiorze $ A = \{a, b, c\} $ zdefiniowaną jako $ a R b $, jeśli $ a $ jest "mniejsze lub równe" od $ b $ według pewnej kolejności alfabetycznej.  
+Sprawdź, czy relacja $ R $ jest relacją porządku częściowego.  
+Zapisz diagram Hassego dla tej relacji.
+
+\item 
+Właściwości relacji na zbiorze liczb  
+
+Rozważ zbiór $ A = \{1, 2, 3, 4, 5\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $ wtedy i tylko wtedy, gdy $ a + b $ jest liczbą parzystą.  
+Sprawdź, czy relacja $ R $ jest zwrotna, symetryczna, przechodnia.  
+
+\item 
+Klasy abstrakcji  
+
+Na zbiorze $ A = \{1, 2, 3, 4, 5, 6\} $ zdefiniowana jest relacja $ R $, gdzie $ a R b $, jeśli $ a - b $ jest podzielne przez 3.  
+Wykaż, że $ R $ jest relacją równoważności.  
+Wyznacz klasy abstrakcji dla tej relacji.
+
+\item  Zapis relacji w postaci macierzy  
+
+Rozważ zbiór $ A = \{1, 2, 3\} $ oraz relację $ R $ zdefiniowaną jako $ a R b $, gdy $ a + b $ jest liczbą nieparzystą.  
+Przedstaw relację $ R $ w postaci macierzy.  
+Na podstawie macierzy ustal, czy relacja $ R $ jest symetryczna.
+
+\end{enumerate}
+
+\subsection{Funkcje -- zadania}
+
+\begin{enumerate}
+\item Niech $A=\{0,1,2,3,4\}$, $B=\{0,1,2\}$.
+Wypisz przykładową funkcję $\isfunc{f}{A}{B}$.
+Ile jest takich funkcji? Ile jest takich funkcji różnowartościowych?
+Ile jest takich funkcji ,,na''? 
+
+\item 
+Ile jest surjekcji ze zbioru $\{0,1,2,3\}$ na ten zbiór?
+Ile jest injekcji ze zbioru $\{0,1,2,3\}$ w ten zbiór?
+
+\item 
+Ile jest surjekcji ze zbioru $\{0,1,2,3\}$ na zbiór $\{0,1,2\}$?
+Ile jest injekcji ze zbioru $\{0,1,2,3\}$ w zbiór $\{0,1,2\}$?
+
+\item 
+Czy $\isfunc{f}{\bR}{\bR}$ zdefiniowana jako $f(x)=x^2$ 
+jest różnowartościowa? Czy jest ,,na''?
+
+Czy $f\rightharpoonup [0,+\infty)$ jest różnowartościowa, czy jest ,,na''?
+
+Czy $\isfunc{g}{[0,+\infty)}{[0,+\infty)}$ zdefiniowana jako 
+$g(x)=x^2$ jest różnowartościowa i czy jest ,,na''?
+
+\item 
+Czy funkcja $\isfunc{f}{\emptyset}{\emptyset}$ jest różnowartościowa
+i czy jest ,,na''?
+
+\item 
+Znajdź bijekcję między $\bbZ$ i $\bN$.
+Znajdź bijekcję między zbiorem liczb parzystych $2\bN$ i $\bN$.
+
+\end{enumerate}
+
+
+\subsection{Kombinatoryka -- zadania}
 \begin{enumerate}
 	\item 
 	Zad. (\cite{MD}, Cw. 5.3.1, p.302)
@@ -817,15 +958,15 @@ sposobów.
 	Ile przez $6$ i przez $9$?
 	
 	\item 
-	 Na ile sposobów można usadzić $n$ osób na ławce?
-	 \item 
+	Na ile sposobów można usadzić $n$ osób na ławce?
+	\item 
 	Na ile sposobów można usadzić $n$ osób przy okrągłym stole?
 	\item  Na ile sposobów można rozdać $52$ karty po równo między $4$ graczy?
 	\item Ile przekątnych ma $n$-kąt wypukły?
-    \item Ile jest różnych sposobów ustawienia na półce dzieła $5$-tomowego tak, aby:
-    \begin{itemize} 
-	\item[a] tomy I i II stały obok siebie
-	\item[b] tomy I i II nie stały obok siebie?
+	\item Ile jest różnych sposobów ustawienia na półce dzieła $5$-tomowego tak, aby:
+	\begin{itemize} 
+		\item[a] tomy I i II stały obok siebie
+		\item[b] tomy I i II nie stały obok siebie?
 	\end{itemize} 
 	\item Ile czteroosobowych komisji można stworzyć z grupy $9$ urzędników, jeżeli
 	wiadomo, że wśród nich są osoby $A$ oraz $B$, które nie chcą razem pracować?
@@ -834,44 +975,44 @@ sposobów.
 	\item  Na ile sposobów można podzielić $3n$ osób na $n$ grup $3$-osobowych?
 	\item W klasie jest $n$ chłopców i $n$ dziewczynek. Na ile sposobów mogą utworzyć pary do tańca. 
 	\item Jaka jest szansa trafienia szóstki w totolotku (losujemy sześć liczb z 49)? Ile powinna wynosić kumulacja, 
-	 żeby przy cenie zakładu 3zł. opłacało się zagrać?
-    \item Na ile sposobów można przejść z lewego górnego do prawego dolnego pola szachownicy, jeśli możemy poruszać się
-    tylko w prawo i w dół?
-    \item Na ile sposobów można odwiedzić wszystkie wierzchołki
-    w grafie pełnym o $n$ wierzchołkach? 
-    Na ile sposobów można to zrobić, ale tak, żeby wrócić do punktu wyjścia?
-    \item Ile jest możliwych wyników rzutu dwiema rozróżnialnymi 
-    kostkami do gry?
-    
-    Ile jest takich wyników, jeśli nie rozróżniamy kostek?
-    
-    Jaka jest szansa na wyrzucenie w sumie $12$ oczek? Jaka jest 
-    szansa na wyrzucenie dwóch szóstek?
-    Jaka jest szansa na wyrzucenie w sumie $11$?
-    
-    Jak jest szansa na wyrzucenie w sumie~$7$?
-    Jak jest szansa na wyrzucenie w sumie~$8$?
-    
-    \item 
-    Układamy ośmio literowe hasło z 26 liter alfabetu. Ile jest haseł, jeśli symbole mogą 
-    się powtarzać. Ile jest takich haseł, w których musi wystąpić przynajmniej jedna 
-    samogłoska (a, e, o, u, i). Ile jest haseł, w których musi wystąpić przynajmniej 
-    jedna samogłoska i przynajmniej jedna spółgłoska.
-    
-    \item 
-    W worku jest 20 kul ponumerowanych od $1$ do $20$. Losujemy (bez zwracania) pięć kul.
-    Jaka jest szansa, że wylosujemy tylko kule o numerach parzystych?
-    Jaka jest szansa, że wylosujemy przynajmniej jedną kulę o numerze parzystym?
-    Jaka jest szansa, że wylosujemy przynajmniej jedną kulę o numerze parzystym
-    i przynajmniej jedną kulę o numerze nieparzystym.
-
-   Jak zmieni sie odpowiedź, jeśli będziemy zwracali po wylosowaniu kule do worka?
-   
-
+	żeby przy cenie zakładu 3zł. opłacało się zagrać?
+	\item Na ile sposobów można przejść z lewego górnego do prawego dolnego pola szachownicy, jeśli możemy poruszać się
+	tylko w prawo i w dół?
+	\item Na ile sposobów można odwiedzić wszystkie wierzchołki
+	w grafie pełnym o $n$ wierzchołkach? 
+	Na ile sposobów można to zrobić, ale tak, żeby wrócić do punktu wyjścia?
+	\item Ile jest możliwych wyników rzutu dwiema rozróżnialnymi 
+	kostkami do gry?
+	
+	Ile jest takich wyników, jeśli nie rozróżniamy kostek?
+	
+	Jaka jest szansa na wyrzucenie w sumie $12$ oczek? Jaka jest 
+	szansa na wyrzucenie dwóch szóstek?
+	Jaka jest szansa na wyrzucenie w sumie $11$?
+	
+	Jak jest szansa na wyrzucenie w sumie~$7$?
+	Jak jest szansa na wyrzucenie w sumie~$8$?
+	
+	\item 
+	Układamy ośmio literowe hasło z 26 liter alfabetu. Ile jest haseł, jeśli symbole mogą 
+	się powtarzać. Ile jest takich haseł, w których musi wystąpić przynajmniej jedna 
+	samogłoska (a, e, o, u, i). Ile jest haseł, w których musi wystąpić przynajmniej 
+	jedna samogłoska i przynajmniej jedna spółgłoska.
+	
+	\item 
+	W worku jest 20 kul ponumerowanych od $1$ do $20$. Losujemy (bez zwracania) pięć kul.
+	Jaka jest szansa, że wylosujemy tylko kule o numerach parzystych?
+	Jaka jest szansa, że wylosujemy przynajmniej jedną kulę o numerze parzystym?
+	Jaka jest szansa, że wylosujemy przynajmniej jedną kulę o numerze parzystym
+	i przynajmniej jedną kulę o numerze nieparzystym.
+	
+	Jak zmieni sie odpowiedź, jeśli będziemy zwracali po wylosowaniu kule do worka?
+	
+	
 \end{enumerate}
 
 
-\subsection{Zadania z ChatGPT}
+\subsection{Kombinatoryka -- zadania z ChatGPT}
 
 \subsubsection{Zasada szufladkowa}
 
@@ -976,8 +1117,7 @@ sposobów.
 	Na ile sposobów można utworzyć liczbę 2-cyfrową, wybierając cyfry spośród 1, 2, 3, 4, przy czym cyfry mogą się powtarzać?
 \end{enumerate} 
 
-\subsection{Teoria grafów}
-Do uzupełnienia.
+
 
 \section{Uwagi lub (p)odpowiedzi}
 
