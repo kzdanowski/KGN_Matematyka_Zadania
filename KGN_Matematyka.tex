@@ -149,6 +149,7 @@
 \DeclareMathOperator{\dom}{dom}
 \DeclareMathOperator{\rng}{rng}
 
+\newcommand{\restricted}{{\upharpoonright}}
 
 \newcommand{\ft}[1]{\frametitle{#1}}
 \newcommand{\lstl}[1]{\begin{lstlisting} #1\end{listing}}
@@ -342,10 +343,10 @@ na rozłączne podzbiory.
 	Niech $\isfunc{f}{X}{Y}$ i $A\subseteq X$. 
 	Ograniczenie $f$ do zbioru $A$, to funkcja 
 	$$
-	f\upharpoonright A = \{ (x,y)\in A\times Y \colon f(x) = y\}.
+	f\restricted A = \{ (x,y)\in A\times Y \colon f(x) = y\}.
 	$$
 \end{dfn}
-Inaczej, $f\upharpoonright A = f \cap (A\times Y)$ lub po prostu
+Inaczej, $f\restricted A = f \cap (A\times Y)$ lub po prostu
 są to te pary $(x,y)\in f$, dla których argument $x\in A$.
 
 
@@ -920,7 +921,7 @@ Ile jest injekcji ze zbioru $\{0,1,2,3\}$ w zbiór $\{0,1,2\}$?
 Czy $\isfunc{f}{\bR}{\bR}$ zdefiniowana jako $f(x)=x^2$ 
 jest różnowartościowa? Czy jest ,,na''?
 
-Czy $f\rightharpoonup [0,+\infty)$ jest różnowartościowa, czy jest ,,na''?
+Czy $f\restricted [0,+\infty)$ jest różnowartościowa, czy jest ,,na''?
 
 Czy $\isfunc{g}{[0,+\infty)}{[0,+\infty)}$ zdefiniowana jako 
 $g(x)=x^2$ jest różnowartościowa i czy jest ,,na''?
