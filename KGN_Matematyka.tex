@@ -285,6 +285,8 @@ w relację z $a$. Klasę abstrakcji oznaczamy przez
 \]
 \end{dfn}
 Każde dwie różne klasy abstrakcji są rozłączne. 
+Jeśli $aRb$, to $a$ i $b$ mają te same klasy abstrakcji, 
+czyli $[a]_R=[b]_R$.
 Zbiór klas abstrakcji $\{ [a]_R \}_{a\in X}$ definiuje podział zbioru $X$
 na rozłączne podzbiory. 
 
@@ -513,7 +515,19 @@ sposobów.
 \end{crl}
 
 \subsection{Teoria grafów}
-Do uzupełnienia.
+
+\begin{dfn}
+	Graf jest to para uporządkowana $G=(V,E)$, gdzie $V$ to niepusty
+	zbiór wierzchołków a $E$ jest podzbiorem iloczynu kartezjanskiego $V^2$.
+	
+    Elementy $V$ to wierchołki grafu $G$, elementy $E$ to krawędzie.
+\end{dfn}
+
+\begin{dfn}
+	Niech $G=(V,E)$ będzie grafem. Graf $G$ jest nieskierowany
+	gdy dla każdej krawędzi $(a,b)$ w $G$, $(b,a)$ też jest krawędzią w $G$. 
+	Czyli $\forall a\in V\forall b\in V((a,b)\in E \imp (b,a)\in E)$. 
+\end{dfn}
 
 \section{Zadania}
 \subsection{Teoria liczb}
