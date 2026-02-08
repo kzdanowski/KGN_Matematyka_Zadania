@@ -1,0 +1,93 @@
+Matematyka I - zagadnienia na egzamin
+
+
+
+
+01.Liczby naturalne, całkowite, wymierne, rzeczywiste, zespolone. 
+   
+   Kiedy liczba jest pierwsza? Kiedy jest złożona?
+   Fundamentalne twierdzenie arytmetyki (o rozkładzie na czynniki pierwsze).
+   Arytmetyka modulo n. Operacje modulo.
+   Twierdzenia Fermata i Eulera.
+   Liczby niewymierne. Przykłady.
+
+   Kąty: miara w stopniach i w radianach.
+   Liczby zespolone. Postać algebraiczna (x+iy) oraz trygonometryczna (r(cos a+ i sin a)).
+   Tłumaczenie z jednej postaci na drugą.
+   Interpretacja geometryczna liczb zespolonych.
+   Co to jest moduł liczby zespolonej, co to jest argument liczby zespolonej?
+   Co to jest liczba sprzężona?
+   Operacje na liczbach zespolonych.  
+   Opis mnożenia liczb zespolonych w postaci trygonometrycznej.
+   Postać e^{ia} liczby zespolonej. 
+   Fundamentalne twierdzenie algebry.
+
+
+
+02.Naiwna teoria zbiorów, diagramy Venna.
+   Jak zapisujemy, że element należy do zbioru,
+   jak zapisujemy zawieranie dwóch zbiorów.
+   Jak definiujemy zawieranie dwóch zbiorów.
+   Jak definiujemy iloczyn, sumę dwóch zbiorów.
+   Teoria relacji.
+   Definicja pary uporządkowanej Kuratowskiego.
+   Co to jest iloczyn kartezjański zbiorów? 
+   Co to jest relacja pomiędzy zbiorami A i B.
+   Niech R będzie relacją między A i B.
+   Dziedzina R, przeciwdziedzina R. 
+   Obraz zbioru X, podzbioru A, względem relacji R między A i B, R[X].
+   Przeciwobraz zbioru Y, podzbioru B, względem relacji R między A i B.
+
+   Kiedy relacja na A jest zwrotna, symetryczna, przechodnia, 
+   przeciwzwrotna, przeciwsymetryczna, antysymetryczna,
+   Częściowy porządek. 
+   Częściowy porządek jako zbiór par i graficzne przedstawienie
+   jako diagram Hassego.
+   Porządek liniowy, definicja, przykłady. 
+   
+
+03.Elementy matematyki dyskretnej.
+   Zasada szufladkowa Dirichleta.
+   Ciąg Fibbonacciego. Znaczenie ciągu Fibbonacciego w przyrodzie.
+   Wzór na n-ty wyraz c. Fibbonacciego.
+   Zliczania: permutacje, kombinacje, kombinacje z powtórzeniami.
+   Zliczania.   
+   Dwumian Newtona. Zliczanie podzbiorów.
+   Zasada włączeń i wyłączeń. 
+   Zliczanie funkcji: bijekcji, iniekcji, ...
+
+
+04.Grafy.
+   Reprezentacja grafu: rysunek, macierz. 
+   Rodzaje grafów: skierowane, nieskierowane, z wagami.
+   Stopnie wierzchołka: wchodzące, wychodzące.
+   Ścieżki  i cykle. 
+   Kliki. Drzewa.
+   Sposoby modelowania problemów za pomocą grafu.
+   Własności grafów: cykle Hamiltona i Eulera.
+  
+
+05.Podstawowe struktury algebraiczne.
+   Grupy, pierścienie, ciała.
+   Przykłady.
+   Przestrzenie wektorowe (liniowe). Definicja przestrzeni wektorowej.
+   Przykłady przestrzenie wektorowych.
+   
+06.Przestrzenie liniowe. 
+   
+    Co to jest przestrzeń liniowa (wektorowa) nad ciałem K?
+    Co to jest podprzestrzeń przestrzeni liniowej?
+    Kiedy wektory w przestrzeni liniowej są niezależne?
+    Co to jest przestrzeń generowana przez zbiór wektorów v1,..., vk?
+    Co to jest baza przestrzeni liniowej?
+    Czy każda przestrzeń liniowa posiada bazę?
+    Co to jest przekształcenie liniowe?
+    Co to jest jądro, ker(f), przekształcenia liniowego f?
+    Co to jest obraz, im(f), przekształcenia liniowego f?
+    Co to jest wymiar przestrzeni liniowej?
+    Jaka jest zależność między wymiarem ker(f) oraz im(f) 
+    przekształcenia liniowego f:U->V?
+
+    Ponieważ na wykładzie zatrzymaliśmy się przed macierzami,
+    więc tego nie będzie na egzaminie. 
+  
