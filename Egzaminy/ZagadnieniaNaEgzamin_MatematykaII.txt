@@ -1,0 +1,89 @@
+Matematyka II - zagadnienia na egzamin
+
+Przestrzenie liniowe
+
+1. Co to jest przestrzeń liniowa (wektorowa)?
+2. Co to jest podprzestrzeń przestrzeni liniowej?
+3. Kiedy wektory w przestrzeni liniowej są niezależne?
+4. Co to jest przestrzeń generowana przez zbiór wektorów v1,..., vk?
+5. Co to jest baza przestrzeni liniowej?
+   Czy każda przestrzeń liniowa posiada bazę?
+6. Co to jest przekształcenie liniowe?
+   Co to jest jądro, ker(f), przekształcenia liniowego f?
+   Co to jest obraz, im(f), przekształcenia liniowego f?
+7. Co to jest wymiar przestrzeni liniowej?
+8. Jaka jest zależność między wymiarem ker(f) oraz im(f) 
+   przekształcenia liniowego f:U->V?
+
+
+9. Zdefiniuj iloczyn skalarny wektorów. 
+   Ile wynosi iloczyn skalarny wektorów prostopadłych? 
+   Ile wynosi iloczyn skalarny wektorów równoległych do siebie?
+
+Macierze
+1. Definicja mnożenia macierzy przez wektor.
+   Definicja mnożenia macierzy przez macierz.
+2. Związek macierzy z przekształceniami liniowymi.
+   Związek mnożenia macierzy przez wektor lub przez 
+   macierz z przekształceniami liniowymi.
+3. Co to jest rząd (ranga) macierzy? Co to macierz odwrotna?
+   Co to macierz odwracalna? 
+   Co to macierz diagonalna? Co to macierz jednostkowa?
+   Co to macierz transponowana? 
+4. Algorytm odwracania macierzy: eliminacja Gaussa.  
+5. Do czego służy wyznacznik macierzy?
+   Jak liczy się wyznacznik macierzy w przypadku macierzy 2x2
+   i 3x3?
+
+Ciągi i szeregi
+
+1. Co to jest ciąg?
+2. Co to jest ciąg arytmetyczny, geometryczny?
+3. Co to jest ciąg ograniczony z góry, z dołu?
+   Co to jest ciąg ograniczony?
+4. Co to jest granica ciągu?
+   Czy ciąg ograniczony a:N->R musi być zbieżny?
+6. Twierdzenie o trzech ciągach.
+7. Jaką granicę ma ciąg (1+1/n)^n?
+   Czy jest to granica wymierna? 
+   Jakie własności ma ta granica?
+7. Co to jest granica szeregu?
+8. Co to znaczy, że szereg jest absolutnie zbieżny?
+
+Granice funkcji
+
+1. Definicja granicy funkcji f:R->R w punkcie x. 
+   Definicja granicy niewłaściwej (równej nieskończoność) w punkcie x.
+   Definicja granicy funkcji w nieskończoności.
+
+Pochodne i analiza przebiegu funkcji
+
+1. Definicja pochodnej funkcji w punkcie x.
+   Interpretacja geometryczna pochodnej.
+2. Co to jest lokalne minimum/maksimum.
+3. Warunek wystarczający istnienia lokalnego maksimum/minimum.
+   Warunek konieczny (dla funkcji różniczkowalnych).
+4. Definicja wypukłości i wklęsłości funkcji na odcinku [a,b].
+5. Warunek wystarczający aby funkcja była wypukła (wklęsła).
+6. Co to znaczy, że funkcja jest parzysta, nieparzysta, okresowa.
+
+Całki
+
+1. Geometryczna interpretacja całki oznaczonej.
+2. Związek całki nieoznaczonej z pochodną.
+2. Metody całkowania: przez części, przez podstawienie.
+
+Poza tym na egzaminie może pojawić się trochę zadań rachunkowych,
+takich jak rozważane na ćwiczeniach,
+na przykład: 
+
+Sprawdź, czy wektory są liniowo niezależne.
+Sprawdź czy jest bazą dany zbiór wektorów.
+Wyznacz jądro danego przekształcenia liniowego.
+Przykłady przekształceń liniowych i 
+sprawdzenie czy przekształcenie jest liniowe.
+Wyznacz macierz odwrotną.
+Wyznacz zbiór rozwiązań układu Ax=b.
+Policzenie granicy ciągu, szeregu. 
+Wyznaczenie pochodnej/całki funkcji.
+Analiza przebiegu funkcji.
